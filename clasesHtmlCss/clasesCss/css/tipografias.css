@@ -1,0 +1,48 @@
+/*lo hacemos */
+@font-face{
+    font-family: "tipo1";
+    src: url("/clasesHtmlCss/fonts/Oswald-Bold.ttf");
+}
+@font-face{
+    font-family: "tipo2";
+    src: url("/clasesHtmlCss/fonts/Oswald-ExtraLight.ttf");
+}
+@font-face{
+    font-family: "tipo3";
+    src: url("/clasesHtmlCss/fonts/Oswald-Light.ttf");
+}
+@font-face{
+    font-family: "tipo4";
+    src: url("/clasesHtmlCss/fonts/Oswald-Medium.ttf");
+}
+@font-face{
+    font-family: "tipo5";
+    src: url("/clasesHtmlCss/fonts/Oswald-Regular.ttf");
+}
+@font-face{
+    font-family: "tipo6";
+    src: url("/clasesHtmlCss/fonts/Oswald-SemiBold.ttf");
+}
+
+/*lo agregamos atravez del link en html*/
+h1{
+    font-family: "Oswald";
+}
+.tipografia1{
+ font-family: "tipo1";
+}
+.tipografia2{
+    font-family: "tipo2";
+}
+.tipografia3{
+    font-family: "tipo3";
+}
+.tipografia4{
+    font-family: "tipo4";
+}
+.tipografia5{
+    font-family: "tipo5";
+}
+.tipografia6{
+    font-family: "tipo6";
+}

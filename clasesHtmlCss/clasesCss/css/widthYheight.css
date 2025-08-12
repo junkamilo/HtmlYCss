@@ -1,0 +1,8 @@
+form{
+    border: 1px solid black;
+    width: 400px;
+}
+input{
+    width: 90%;
+    height: 30px;
+}

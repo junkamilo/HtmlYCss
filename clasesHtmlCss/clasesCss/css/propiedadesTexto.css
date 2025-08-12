@@ -1,0 +1,20 @@
+p{
+    color: red;/*color de la letra*/
+    font-family: sans-serif;/*fuentes de letras*/
+    font-size: 20px;/*tamaño de la letra*/
+    font-weight: 500;/*grosor de la letra*/
+    font-style: italic;/*estilos de letras*/
+    text-align: start;/*alineamos texto*/
+    text-decoration: underline;/*Subrayado de letras*/
+    line-height: 2;/*espaciado de la letra*/
+    letter-spacing: 2px;/*espaciado entre letras*/
+    text-transform: uppercase;/*transformando tetxo*/
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+strong{
+    text-decoration: line-through;
+}

@@ -1,3 +1,12 @@
+/*selector por elementos*/
 li{
+    color: gray;
+}
+/*selector en clase*/
+.ingrediente-faltante{
     color: red;
+}
+/*selector por id*/
+#ingrediente-secreto{
+    color: blue;
 }
