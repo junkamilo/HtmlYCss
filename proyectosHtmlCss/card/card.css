@@ -1,0 +1,40 @@
+.card{
+    border: 1px solid black;
+    background: rgb(202, 202, 202);
+    width: 40%;
+    height: 350px;
+    margin: auto;
+}
+.logo{
+    background: gray;
+    width: 100px;
+    height: 100px;
+    margin: 10px 40%;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.nombre , .rol{
+    text-align: center;
+    width: 100%;
+    height: 40px;
+}
+.rol{
+    margin: -20px 0 0 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.descripcion{
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 500;
+    margin: -10px 5px;
+    border: 1px dotted black;
+    text-align: justify;
+    
+}
