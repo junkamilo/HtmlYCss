@@ -1,0 +1,18 @@
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 10px;/*espacios entre los elementos*/
+    padding: 50px;/*da relleno al contenido*/
+}
+.box1{
+    background: red;
+}
+.box2{
+    background: red;
+}
+.box3{
+    background: red;
+}
+.box4{
+    background: red;
+}
