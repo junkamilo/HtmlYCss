@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+.content{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid #000;
+    margin: 5vh auto;
+    /*background-color: #f00;/*Agregamos color al fondo*/
+    /*Agregamos imagen
+    background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2021/07/one-piece-monkey-d-luffy-2407201.jpg?tf=3840x");
+
+    /*Posicionamos la imagen
+    background-position: center;
+
+    /*Ajustamos la imagen al contenedor
+    background-size: cover;
+
+    /*cuando hacemos scroll la imagen se va mostrando
+    background-attachment: fixed;*/
+
+    /*Hacmos al shorthand usamos la propuedad background*/
+    background: #f00 
+            url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2021/07/one-piece-monkey-d-luffy-2407201.jpg?tf=3840x") 
+            center / cover 
+            fixed;
+}

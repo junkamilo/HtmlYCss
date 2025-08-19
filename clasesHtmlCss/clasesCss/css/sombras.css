@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+}
+.box{
+    width: 40vw;
+    height: 80vh;
+    padding-top: 10px;
+    margin: 40px auto;
+    box-sizing: border-box;
+}
+/*Agragaremos sombra a la caja*/
+.box_sombras{
+    background: rgb(245, 113, 103);
+    box-shadow:
+    /*agragmos el parametro vertical*/
+    10px 
+    /*agregamos el parametro horizontal*/
+    10px
+    /*agregamos el parametro del desenfoque*/
+    10px 
+    /*agrgamos el parametro de difuminacion*/
+    0 
+    /*Agrgamos el parametro de el color*/
+    #000;
+}
+.titulo{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-shadow: 
+    /*agragmos el parametro vertical*/
+    3px 
+    /*agregamos el parametro horizontal*/
+    3px
+    /*agregamos el parametro del desenfoque*/
+    1px
+    /*Agrgamos el parametro de el color*/
+    #fff
+    ;
+}
+/*Agragmos sombra al texto*/
+.box_texto{
+    background: rgb(245, 113, 103);
+}
+.texto{
+    text-align: justify;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-shadow: 
+    /*agragmos el parametro vertical*/
+    3px 
+    /*agregamos el parametro horizontal*/
+    3px
+    /*agregamos el parametro del desenfoque*/
+    1px
+    /*Agrgamos el parametro de el color*/
+    #fff
+    ;
+}
+
+/*Agregamos sombras al elemento*/
+.box_elemento{
+    background: rgb(245, 113, 103);
+    text-align: center;
+}
+.imagen{
+    width: 60%;
+    height: 40vh;
+    margin: 0 auto;
+    /*Aca lo agregamos al elemento de la imagen:
+
+    box-shadow: /*agragmos el parametro vertical
+    5px
+
+    /*agregamos el parametro horizontal
+    5px
+
+    /*agregamos el parametro del desenfoque
+    20px
+
+    /*Agrgamos el parametro de el color
+    #fff;*/
+
+    /*Aca lo agregamos al png de la imagen el logo*/
+    filter: drop-shadow(5px 5px 1px #fff);
+}

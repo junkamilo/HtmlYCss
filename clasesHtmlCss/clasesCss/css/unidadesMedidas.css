@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+.content{
+    background: rgb(150, 66, 200);
+    border-left: 5px solid rgb(85, 7, 85);
+    margin: 10vh auto;
+    width: 50vw;/*va a tomar la mitad de ancho de la pantalla*/
+    height: 30vh;/*va a tomar el 30% de la pantalla*/
+    padding: 5px 5% 20px 5%;
+}
+.tittulo{
+    text-align: center;
+}
+.descripcion{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5%;
+    padding: auto;
+    
+}
+/*em: va a buscar la medida del elemento padre y la va a adaptar a su medida
+Ejemplo: si el .content tiene un tamaño de 40px y la hijo le das 1em al hijo
+le estas dando 40px tambien si le das 2em, le estas dando un 80px
+*/
+
+/*rem: va a buscar la medida del elemento raiz como
+ejemplo si al html tiene un 50px de ancho y lo colocas a un elemento div 1rem 
+le estas dando a ese div un 50px tambien, si le agregas 2rem le estas dando un 100px
+*/

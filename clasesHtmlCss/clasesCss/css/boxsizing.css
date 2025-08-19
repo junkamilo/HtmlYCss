@@ -7,3 +7,23 @@ body{
     background: red;
     margin: 10px;
 }
+/*Al colocar content-box la caja aumentara el tamaño
+pero solo el contenido tendra las medidas que ya se establecieron
+Crecera el pagin, el border pero no el contenido, ese se matendra a su medida.
+*/
+.box-default{
+    box-sizing: content-box;
+    padding: 30px;
+    border: 5px solid black;
+
+}
+/*Al colocar border-box 
+el tamaño se ajustara a las medidas que ya se establecieron
+lo que el contenido de la caja se tendra que ajustar para que 
+no se rompan las medidas.
+*/
+.box-new{
+    box-sizing: border-box;
+    padding: 30px;
+    border: 5px solid black;
+}

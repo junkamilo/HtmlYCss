@@ -1,0 +1,26 @@
+body{
+    background: #07fa;
+}
+.titulo{
+    text-align: center;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    padding-top: 20vh;
+    box-sizing: border-box;
+    margin: 10px auto;
+    border-radius: 10%;
+}
+.box1{
+    /*gradiente linear transparante*/
+    background: linear-gradient(red,transparent);
+}
+.box2{
+    /*gradiente radial transparante*/
+    background: radial-gradient(red,transparent);
+}
+.box3{
+    /*gradiente conic transparante*/
+    background: conic-gradient(red,transparent);
+}
