@@ -12,38 +12,17 @@ input , textarea , select{
     box-shadow: 0px 0px 5px #000000;
     background: transparent;
     color: #eee;
-    margin-top: 10px;
+    margin-top: 30px;
 }
-textarea{
-    min-width: 100%;/*Tamaño de ancho minimo*/
-    /*max-height: 200px;Tamaño altura maximo final*/
-    min-height: 100px;/*Tamaño altura minimo inicial*/
-    resize: none;/*no permite expandir ni a lo alto ni a lo largo*/
-    font-family: sans-serif;
-}
-.form_input{
-    padding: 10px 20px;
-}
-h2{
-    text-align: center;
-}
+
 form{
-    padding: 20px 10px;
+    padding: 20px 0;
     max-width: 600px;
     margin: 50px auto;
     box-shadow: 0px 0px 35px #000000;
     border-radius: 10px;
     background: transparent;
-}
-label{
-    font-family: sans-serif;
-    font-size: 20px;
-}
-form input[type="checkbox"]{
-    width: auto;
-}
-option{
-    background: #222;
+    padding: 20px;
 }
 fieldset{
     margin: 10px 0;

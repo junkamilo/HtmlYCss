@@ -1,24 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/clasesHtmlCss/clasesHtml/css/textarea.css">
-        <title>Textarea</title>
-    </head>
-    <body>
-        
-        <form action="">
-            <h2>Formulario de contato</h2>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/clasesHtmlCss/clasesHtml/css/textarea.css">
+    <title>Textarea</title>
+</head>
+
+<body>
+
+    <form action="">
+        <h2>Formulario de contato</h2>
+        <!--Inputs simples-->
+        <fieldset>
+            <legend>Informacion Basica</legend>
             <div class="form_input">
-                <input type="text" placeholder="Nombre completo">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" placeholder="Juan Camilo" id="nombre">
             </div>
             <div class="form_input">
-                <input type="email" placeholder="email">
+                <label for="email">Email</label>
+                <input type="email" placeholder="ejemplo@gamil.com" id="email">
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Informacion De Usuario</legend>
+            <!--Inputs SELECT & OPTION-->
+            <div class="form_input">
+                <label for="tipousuario">Tipo de Usuario</label>
+                <select name="" id="tipousuario">
+                    <option value="user1">Seguidor/a</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Otros</option>
+                </select>
+            </div>
+            <!--Inputs DATALIST & OPTION-->
+            <div class="form_input">
+                <label for="referente">Referente</label>
+                <input list="referente" name="referente">
+                <datalist name="" id="referente">
+                    <option value="user1">Seguidor/a</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Otros</option>
+                </datalist>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Terminos y condicones</legend>
+            <!--Textarea-->
+            <div class="form_input">
+                <label for="comentario">Mensaje</label>
+                <textarea id="comentario" placeholder="Deja tu comentario"></textarea>
             </div>
             <div class="form_input">
-                <textarea name="" id="" placeholder="Deja tu comentario"></textarea>
+                <!-- utilizamos el label que lleva adentro el checkbox -->
+                <label>Acepto terminos y condiciones
+                    <input type="checkbox">
+                </label>
             </div>
-        </form>
-    </body>
+        </fieldset>
+
+
+    </form>
+</body>
+
 </html>
