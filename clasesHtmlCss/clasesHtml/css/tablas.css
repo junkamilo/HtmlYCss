@@ -1,0 +1,16 @@
+td , th{
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+    border: 1px solid #ddd;
+}
+td{
+    color: #444;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 10px #000;
+}

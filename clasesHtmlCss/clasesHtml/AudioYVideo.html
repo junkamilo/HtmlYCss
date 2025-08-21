@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/clasesHtmlCss/clasesHtml/css/AudioVideo.css">
+    <title>Video Y Audio</title>
+</head>
+<body>
+    <!--Etiqueta audio-->
+    <!--Atributo controls para mostrar los controles de reproducción-->
+    <!--Atributo autoplay para que el audio se reproduzca automáticamente al cargar la página-->
+    <!--Atributo muted para que el audio se reproduzca sin sonido-->
+    <!--loop video que se repita-->
+    <video src="/clasesHtmlCss/clasesHtml/video/Nuevas Dux + Ranchera.mp4" controls autoplay muted loop>
+        <!--Etiqueta track para subtítulos o descripciones-->
+        <!--Atributo src para la ruta del archivo de subtítulos-->
+        <!--Atributo default para que se muestre por defecto-->
+        <!--Atributo kind para especificar el tipo de pista (subtítulos, descripción, etc.)-->
+        <!--Atributo srclang para el idioma de los subtítulos-->
+        <track src="captions.vtt" default kind="captions" srclang="es"></track>
+        Tu video no soporta el video
+    </video>
+
+    <!--Etiqueta audio-->
+    <!--Atributo controls para mostrar los controles de reproducción-->
+    <!--Atributo autoplay para que el audio se reproduzca automáticamente al cargar la página-->
+    <!--Atributo muted para que el audio se reproduzca sin sonido-->
+    <audio src="/clasesHtmlCss/clasesHtml/audio/Eladio Carrión, Nach - Mama's Boy (Video Oficial)  Sol María.mp3" controls autoplay muted>Tu audio no soporta el audio</audio>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{
+    background: #333;
+    color: #ddd;
+}
+/*Esto es para mostrar informacion con flecha*/
+/*Es un Menu desplegable*/
+details{
+    background: transparent;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+/*Cuando Abrimos el details cambiamos el boton,letra y fuente de letra*/
+details[open]{
+    background: #444;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+summary{
+    background: transparent;
+    border-bottom: 1px solid #ddd;
+}
