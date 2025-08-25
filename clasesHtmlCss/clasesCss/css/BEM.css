@@ -1,0 +1,39 @@
+.lista-ingredientes {
+    border: 2px solid #000;
+}
+
+.ingrediente {
+    color: gray;
+    margin: 10px auto;
+    list-style: square;
+}
+
+.ingrediente-danino {
+    color: red;
+    text-decoration: line-through;
+}
+
+.ingrediente-importante {
+    color: green;
+    font-weight: bold;
+}
+
+/*Metolodia BEM*/
+.lista__item {
+    color: blue;
+}
+
+.item--danino {
+    color: red;
+    text-decoration: line-through;
+}
+
+.item--importante {
+    color: green;
+    font-weight: bold;
+}
+
+.lista--vieja {
+    color: gray;
+    border: 2px solid #727272;
+}
