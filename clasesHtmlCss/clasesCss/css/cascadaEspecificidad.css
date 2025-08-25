@@ -1,0 +1,21 @@
+/*Especificidad:  ID > Clase > Etiqueta*/
+/*Especificidad ID 1/0/0*/
+#titulo{
+    color: orange;
+}
+/*Especificidad etiqueta 0/0/1*/
+h1{
+    color: blue;
+}
+/*Especificidad etiqueta 0/0/1*/
+h1{
+    color: red;
+}
+/*Especificidad clase 0/1/0*/
+.titulo{
+    color: green;
+}
+/*Especificidad etiqueta 0/0/1 + !important*/
+h1{
+    color : purple !important;
+}

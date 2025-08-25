@@ -1,0 +1,26 @@
+/*Dar estilos por atributos*/
+img[src="/clasesHtmlCss/clasesHtml/imagenes/final-image.jpg"]{
+    width: 100px;
+}
+/*Dar estilos a imagenes que termien solo en .png*/
+img[src$="png"]{
+
+}
+/*Dar estilos a imagenes que comiencen con algo*/
+img[src^="png"]{
+
+}
+/*Selecciona los li que se encuentran dentro del ul*/
+ul li{
+    color: red;
+}
+/*Seleccionamos el hijo directo de ul que es li lo cual en li se encuentra strong*/
+ul > li > strong{
+    color: blue;
+}
+
+/*Selector adyasente*/
+/*Se le da estilo al p que esta depues del h1*/
+h1 + p + p{
+    color: orange;
+}

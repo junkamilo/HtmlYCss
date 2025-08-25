@@ -1,0 +1,27 @@
+/*Seleccionamos la primera letra*/
+h1::first-letter{
+    color: #f00;
+    font-size: 3em;
+    letter-spacing: -8px;
+}
+/*Seleccionamos la primera linea*/
+p::first-line{
+    color: #f00;
+    font-weight: bold;
+}
+/*Seleccionamos el texto seleccionado*/
+h1::selection{
+    background: #ff0;
+    color: #00f;
+}
+input::placeholder{
+    color: #00ff00;
+}
+/*Insertar contenido antes de un elemento*/
+li::before{
+    content: "👉 ";
+}
+/*Insertar contenido despues de un elemento*/
+li::after{
+    content: " 👈";
+}

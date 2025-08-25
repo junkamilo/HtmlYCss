@@ -1,0 +1,29 @@
+/*is para agrupar elemento li con esas clases*/
+:is(.elemento1, .elemento2, .elemento3) {
+   color: #f00;
+}
+
+/*has cambiara el fondo azul si ul contiene un li con la clase .excluir*/
+ul:has(li.excluir) {
+    background: #00f;
+    color: #fff;
+}
+/*si al ul le sigue un div modificamos el ul*/
+ul:has(+div){
+    border: 5px solid #000;
+}
+/*Cambiamos el color del label si el input es valido*/
+label:has(input:valid){
+    color: green;
+}
+/*Cambiamos el color del label si el input esta invalido*/
+label:has(input:invalid){
+    color: red;
+}
+/*Cambiamos el color del input si es valido o invalido*/
+input:invalid{
+    color: red;
+}
+input:valid{
+    color: green;
+}

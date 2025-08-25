@@ -1,0 +1,30 @@
+body{
+    color: blue;
+}
+div{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+h1{
+/*
+inherit: hereda el estilo del padre
+initial: vuelve al estilo por defecto del navegador
+unset: quita cualquier estilo que tenga el elemento y lo deja sin estilo
+revert: coloca los estilos que son descargados por el usuario
+*/
+    color: initial;
+}
+
+div h2{
+    color: initial;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: unset;
+}
+div p{
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}

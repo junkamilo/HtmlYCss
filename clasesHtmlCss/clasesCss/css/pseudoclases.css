@@ -1,0 +1,73 @@
+:root{
+    --color-principal: #ff0000;
+    --color-secundario: #00ff00;
+    --color-terciario: #0000ff;
+}
+
+h1{
+    color: blue;
+    background: #8a8a8a;
+    font-family: sans-serif;
+    margin: 30px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/*Pseudoclase hover: pasar cursos por encima*/
+h1:hover{
+    color: rgb(0, 132, 255);
+    background-color: yellow;
+    cursor: pointer;
+}
+/*Pseudoclase active: cuando se da click*/
+h1:active{
+    color: red;
+    background-color: black;
+}
+/*Seleccionamos el primer li*/
+li:first-child{
+    color: red;
+
+}
+/*Seleccionamos el segundo li o (X) elemento*/
+li:nth-child(4){
+    color: green;
+}
+
+/*Selecionamos el ultimo li*/
+li:last-child{
+    color: blue;
+}
+/*Seleccionamos li SI Y NO donde n representa los elementos a modificar */
+li:nth-child(4n){
+    color: var(--color-principal);
+}
+/*Seleccionamos li que NO tengan la clase excluir*/
+li:not(.excluir){
+    color: var(--color-terciario);
+}
+/*Seleccionamos los div que esten vacios*/
+div:empty{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    border: 2px solid red;
+}
+/*Selecionamos elementos que esten checkeados*/
+input[type="checkbox"]:checked{
+    margin: 0;
+    width: 100%;
+    border: 1px solid #000;
+}
+/*Selecionamos enlaces no visitados*/
+a:link{
+    color: green;
+    text-decoration: none;
+}
+/*Selecionamos enlaces visitados*/
+a:visited{
+    color: red;
+    text-decoration: none;
+}
