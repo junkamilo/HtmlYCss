@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background: #f00;
+    margin: 0;
+    position: relative;
+    left: 0;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
+    /*transition property especifica qué propiedades CSS tendrán un efecto de transición cuando cambien sus valores
+    transition-property: background, color,font-size,left;
+    transition duration  define cuánto tiempo tarda en completarse un efecto de transición
+    transition-duration: 1s;
+    transition delay el tiempo de retardo antes de que comience un efecto de transición
+    transition-delay: 0.10s;
+    transition timing-function especifica la velocidad de la transición durante su duración
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67);*/
+
+    
+    /*shouthand
+    transition-property:left
+    transition-duration: 1s   
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67)
+    transition-delay: 0.10s
+    */
+    transition: left 1s cubic-bezier(.17,.67,.83,.67) 0.10s;
+}
+body:hover .box{
+    background: #00f;
+    color: #000;
+    font-size: 60px;
+    left: 100%;
+}

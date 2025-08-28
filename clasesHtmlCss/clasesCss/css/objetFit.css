@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    /*object-fit: fill;/*Propiedad por defecto*/
+    object-fit: cover;/*Se adapta a la propiedad de width y height*/
+    /*object-fit: contain;/*Se adapta a su tamaño real dentro del elemento padre*/
+    /*object-fit: scale-down;/*Se queda con la resolucion mas pequeña en este caso es heigth de 200px*/
+    object-position: center;/*Posicionamos la imagen en el contenedor*/
+    border: 1px solid #000;
+}

@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 20px auto;
+    /*white-space: nowrap; No permite saltos de linea */
+    /*white-space: pre; Permite saltos de linea y espacios lo que le demas en el html*/
+    white-space: normal; /* Permite saltos de linea y espacios pero ajusta el texto al ancho del contenedor */
+    text-overflow: ellipsis;/* Agrega puntos suspensivos al final del texto que no cabe en el contenedor */
+    overflow: hidden;
+    text-wrap: pretty;
+}
