@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box{
+    width: 30%;
+    height: 100px;
+    border-radius: 10px;
+    background: #fff;
+    /*Position fixed siempre se va a posicionar respecto a la ventana*/
+    position: fixed;
+    top: 50px;
+    right: 0;
+    box-shadow: 0px 0px 10px #000;
+    box-sizing: border-box;
+    padding: 10px;
+    line-height: 40px;
+}
+h4, p{
+    margin: 0;
+    padding: 0;
+    
+}
+h4::before{
+    content: "👉 ";
+}
+/*Insertar contenido despues de un elemento*/
+h4::after{
+    content: " 👈";
+}
+.puntoPartida{
+    width: 50%;
+    height: 50px;
+    background: #000;
+    margin: 20px 5px;
+    border-radius: 10px;
+    /*Position sticky se va a posicionar respecto a su contenedor padre*/
+    position: sticky;
+    top: 50px;
+}
+.puntoPartida > p{
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
