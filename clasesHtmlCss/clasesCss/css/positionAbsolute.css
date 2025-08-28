@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.content_box{
+    width: 80%;
+    margin: 30px auto;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: rgb(206, 113, 8);
+    /*Al colocar position relative, los hijos con position absolute van a tomar de referencia este contenedor*/
+    position: relative;
+}
+.box{
+    width: 20%;
+    height: 20vh;
+    background: #db7;
+    border: 1px solid #000;
+    margin: auto;
+    border-radius: 10px;
+}
+.box--blue{
+    background-color: #48e;
+    /*Al colocar position absolute rompe con el padre y va a tomar de punto de referencia la etiqueta html*/
+    position: absolute;
+    /*Centramos la caja al contenedor padre*/
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+.box--orange{
+    background-color: #f64;
+    position: relative;
+}

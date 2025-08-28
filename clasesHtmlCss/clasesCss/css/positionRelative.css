@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 20%;
+    height: 20vh;
+    background: #f00;
+    border: 1px solid #000;
+    margin: auto;
+    border-radius: 10px;
+    /*Al momento de agregar position relative permitira mover la caja para cualquier lado*/
+    position: relative;
+}
+.box--blue{
+    background-color: #00f;
+    top: 10px;/*top tendra mas prioridad que bottom !important*/
+    right: 50px;
+    bottom: 5px;
+    left: 20px;/*left tendra mas prioridad que right !important*/
+    z-index: 2;/*El z-index permitira que una caja se superponga a otra, el que tenga mayor numero estara arriba*/
+}
+.box--orange{
+    background-color: rgb(255, 174, 0);
+}

@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.modal{
+    position: absolute;
+    background: #0009;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.modal__content{
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 80%;
+    margin: auto;
+    margin: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+.icon_close{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #f00;
+    box-shadow: 0 0 5px #000;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+.modal__title{
+    margin-top: 10px;
+}
