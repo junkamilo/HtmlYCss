@@ -1,0 +1,309 @@
+body {
+    margin: 20px auto;
+    padding: 5px;
+    width: 30vw;
+    height: 90vh;
+    background: #111b21;
+    border: 1px solid #222;
+    color: #e9edef;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+body:hover{
+    cursor: pointer;
+}
+
+/*header whatsApp*/
+header {
+    width: 100%;
+    height: 15%;
+    margin: 0 auto 2% auto;
+    background-color: #202c33;
+}
+
+/*contenedor principal de todo el header*/
+.content_header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 2%;
+    box-sizing: border-box;
+    background-color: #202c33;
+}
+
+/*contenedor del titulo y del content app  que contiene el logo de la camera y los tres puntos*/
+.content_logo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202c33;
+}
+
+/*titulo de whatsApp*/
+.titulo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    box-sizing: border-box;
+    padding: 0 0 0 2%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/*contenedor que tiene logo de la camera y los tres puntos*/
+.content_app {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2%;
+    box-sizing: border-box;
+    padding: 0 2% 0 0;
+    background-color: #202c33;
+}
+
+.logo_camera,
+.menu_configuracion {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+/*contendor del buscador*/
+.content_buscador {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    background-color: #202c33;
+}
+
+/*contenedor que tiene el logo de la lupa y el input search*/
+.content_searchs {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background-color: #202c33;
+}
+
+.icon_lupa {
+    width: 100%;
+    height: 100%;
+    width: 10%;
+}
+
+.searh {
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+input:focus {
+    outline: none;
+}
+
+/*contenedor de navegacion*/
+nav {
+    width: 100%;
+    height: 5vh;
+    box-sizing: border-box;
+    background: #202c33;
+}
+
+.content_items {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.item_menu {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background: #2a3942;
+    color: #e9edef;
+    border: 1px solid #3b4a54;
+}
+.item_menu:hover {
+    background: #005c4b;
+    color: #25d366;
+}
+
+/*main principal*/
+main {
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    position: relative;
+    background: #111b21;
+    
+}
+
+.content_mesagges {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1%;
+    background: #111b21;
+}
+.item_mesagges {
+    width: 100%;
+    height: 15%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1%;
+    background: #202c33;
+    border-bottom: 1px solid #222;
+}
+.item_mesagges:hover{
+    background: #3b525f;
+}
+.logo_perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background: #2a3942;
+    border: 1px solid #3b4a54;
+}
+
+.content_novedades {
+    width: 95%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 0 1%;
+    background: transparent;
+}
+.userName_hora{
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hora_chat{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.username , .mesagges{
+    margin: 0;
+    width: 100%;
+}
+
+/*pie de pagina*/
+footer {
+    width: 100%;
+    margin: 0;
+    height: 15%;
+    box-sizing: border-box;
+    padding: 3% 0;
+    background: #202c33;
+    color: #e9edef;
+}
+.content_ventanas{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ventana{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 1%;
+}
+.logo_ventana{
+    width: 60%;
+    height: 60%;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 0;
+    background: #111b21;
+    border: 1px solid #3b4a54;
+}
+.nombre_ventana{
+    width: 100%;
+    height: 40%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+/*Botones flotantes*/
+.content_buscarMensaje , .content_IA{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.content_buscarMensaje{
+    position: absolute;
+    left: 250px;
+    bottom: 40px;
+    background-color: #25d366;
+    border: 1px solid #3b4a54;
+}
+.content_IA{
+    position: absolute;
+    left: 250px;
+    bottom: 90px;
+    background-color: #005c4b;
+    border: 1px solid #3b4a54;
+}
