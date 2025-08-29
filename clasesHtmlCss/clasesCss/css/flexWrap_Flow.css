@@ -36,10 +36,13 @@ border: 1px solid black;
 }
 .flex_column{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    /*flex-wrap: wrap;
+    flex-direction: column;*/
     height: 60vh;
     border: 1px solid black;
+    margin: 0 0 5% 0;
+    /*flex-flow nos permite colocar la direccion y el wrap*/
+    flex-flow: column wrap;
 }
 .column_nowrap{
     flex-wrap: nowrap;
