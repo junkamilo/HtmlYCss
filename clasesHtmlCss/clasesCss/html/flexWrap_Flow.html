@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/clasesHtmlCss/clasesCss/css/flexWrap_Flow.css">
+    <title>flex Wrap Y flex Flow</title>
+</head>
+<body>
+    <h1>Aprendiendo Flexbox</h1>
+    <h2>Flex Wrap y Flex Flow</h2>
+    <ul>
+        <li><a href="#flex_row">flex wrap</a></li>
+        <li><a href="#flex_rowReverse">flex flow</a></li>
+    </ul>
+    <h2>flex-wrap: wrap con flex-direction : row</h2>
+    <p>van a poder pasar a la siguiente fila</p>
+    <div class="flex flexbox_wrap" id="flexbox_wrap">
+        <div class="item_flex">Item 1</div>
+        <div class="item_flex">Item 2</div>
+        <div class="item_flex">Item 3</div>
+        <div class="item_flex">Item 4</div>
+        <div class="item_flex">Item 5</div>
+        <div class="item_flex">Item 6</div>
+        <div class="item_flex">Item 7</div>
+        <div class="item_flex">Item 8</div>
+        <div class="item_flex">Item 9</div>
+        <div class="item_flex">Item 10</div>
+    </div>
+    <h2>flex-wrap: nowrap con flex-direction : row</h2>
+    <p>no van a poder cambiar a la siguiente fila</p>
+    <div class="flex flexbox_nowrap" id="flexbox_nowrap">
+        <div class="item_flex">Item 1</div>
+        <div class="item_flex">Item 2</div>
+        <div class="item_flex">Item 3</div>
+        <div class="item_flex">Item 4</div>
+        <div class="item_flex">Item 5</div>
+        <div class="item_flex">Item 6</div>
+        <div class="item_flex">Item 7</div>
+        <div class="item_flex">Item 8</div>
+        <div class="item_flex">Item 9</div>
+        <div class="item_flex">Item 10</div>
+    </div>
+    <h2>flex-wrap: wrap con flex-direction : column</h2>
+    <p>van a poder cambiar a la siguiente columna</p>
+    <div class="flex_column" id="flexbox_nowrap">
+        <div class="item_flex">Item 1</div>
+        <div class="item_flex">Item 2</div>
+        <div class="item_flex">Item 3</div>
+        <div class="item_flex">Item 4</div>
+        <div class="item_flex">Item 5</div>
+        <div class="item_flex">Item 6</div>
+        <div class="item_flex">Item 7</div>
+        <div class="item_flex">Item 8</div>
+        <div class="item_flex">Item 9</div>
+        <div class="item_flex">Item 10</div>
+    </div>
+    <h2>flex-wrap: nowrap con flex-direction : column</h2>
+    <p>no van a poder cambiar a la siguiente columna</p>
+    <div class="flex_column column_nowrap" id="flexbox_nowrap">
+        <div class="item_flex">Item 1</div>
+        <div class="item_flex">Item 2</div>
+        <div class="item_flex">Item 3</div>
+        <div class="item_flex">Item 4</div>
+        <div class="item_flex">Item 5</div>
+        <div class="item_flex">Item 6</div>
+        <div class="item_flex">Item 7</div>
+        <div class="item_flex">Item 8</div>
+        <div class="item_flex">Item 9</div>
+        <div class="item_flex">Item 10</div>
+    </div>
+</body>
+</html>

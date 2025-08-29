@@ -1,0 +1,13 @@
+header{
+    /*Este emmet genera un margin de 10px*/
+    /*m10 la p es % porciento*/
+    margin: 10px;
+    /*p10p*/
+    padding: 10%;
+    /*m10p10p10p10*/
+    margin: 10% 10% 10% 10px;
+    /*bgc#000*/
+    background-color: #000;
+    /*c#000*/
+    color: #000;
+}

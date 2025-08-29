@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet</title>
+</head>
+<body>
+    <!--Este emmet logra hacer-->
+    <!--Cramos un ul con 4 li dentro 4 a con la clase link-->
+    ul>li*4>a.link
+    <ul>
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+    </ul>
+
+    <!--Este emmet logra hacer-->
+    ul.content_item>li*4>a.link
+    <ul class="content_item">
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+    </ul>
+
+    <!--Este emmet logra hacer-->
+<!--{}=estas llaves indican que llevan texto y el signo $ generan numeros auto-incrementable ejemplo 1,2,3 etc-->
+    header.header>ul.content_item>li.item*4>a.link{Link $}
+    <header class="header">
+        <ul class="content_item">
+            <li class="item"><a href="" class="link">Link 1</a></li>
+            <li class="item"><a href="" class="link">Link 2</a></li>
+            <li class="item"><a href="" class="link">Link 3</a></li>
+            <li class="item"><a href="" class="link">Link 4</a></li>
+        </ul>
+    </header>
+</body>
+</html>

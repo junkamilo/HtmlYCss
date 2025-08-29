@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/**/
+h1{
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+}
+h2{
+    padding: 0 0 0 10px;
+    margin: 0 0 1% 0;
+}
+ul{
+    width: 100%;
+    height: 20vh;
+    margin: 0 0 5% 0;
+    line-height: 180%;
+    padding: 0 0 0 3%;
+}
+li{
+    font-size: 20px;
+}
+p{
+    margin: 0 0 10px 10px;
+}
+
+/*------ FLEXBOX ------*/
+.flexbox{
+
+    /*Colocamos al elemento padre en flex*/
+    display: flex;
+    /*Agregamos direccion a los elementos con flex-direction;
+    lo cual el main axis en fila inicia de izquierda a derecha ---->
+    flex-direction: row;*/    
+    flex-direction: row;
+    /*flex direction cambia en la direccion de texto*/
+    /*direction: rtl;*/
+    margin: 0 0 5% 0;
+    border: 1px solid black;
+}
+.flex_rowReverse{
+    /*con esta dirreccion el main axis en fila actua de derecha a izquierda <----
+    flex-direction: row-reverse;*/
+    flex-direction: row-reverse;
+}
+.flex_column{
+    /*con esta direccion el main axis en columna actua de arriba hacia abajo
+    flex-direction: column;*/
+    flex-direction: column;
+}
+.flex_columnReverse{
+    /*con esta direccion el main axis en columna actua de abajo hacia arriba
+    flex-direction: column-reverse;*/
+    flex-direction: column-reverse;
+}
+.item_flex{
+    /*si no definimos el tamaño width a los elementos van a ocupar por defecto todo el cros axis*/
+    width: 150px;
+    line-height: 150px;
+    background: #FF6961;
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+.item_flex:first-child{
+    background: #FFE08E;
+}
+.item_flex:nth-child(2){
+ background-color: #FFC5CB;
+}
+.item_flex:nth-child(3){
+ background-color: #FFB092;
+}
+.item_flex:nth-child(4){
+ background-color: #FDFBD4;
+}
