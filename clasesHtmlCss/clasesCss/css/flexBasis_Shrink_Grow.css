@@ -37,7 +37,7 @@ body{
     /*con esta propiedad abreviamos las tres*/
     /*1) flex grow*/
     /*2) flex shrink*/
-    /*3) flex shrink*/
+    /*3) flex basis*/
     flex: 1 1 150px;
 }
 .flex_item:first-child{
