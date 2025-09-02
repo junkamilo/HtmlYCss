@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #c7c7c7
+}
+.flex_content{
+    width: 80%;
+    height: 40vh;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    gap: 20px;
+}
+.flex_item{
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  /*  /*Agarra los espacios disponibles 
+    flex-grow: 1;
+
+    /*define hasta donde se van a encoger los elementos
+    flex-shrink: 0;
+
+    /*tamaño base para un item
+    flex-basis: 150px*/
+
+    /*con esta propiedad abreviamos las tres*/
+    /*1) flex grow*/
+    /*2) flex shrink*/
+    /*3) flex shrink*/
+    flex: 1 1 150px;
+}
+.flex_item:first-child{
+    background-color: #f00;
+    /*solo funciona cuando se tiene align-items*/
+    /*y con esto modificamos solo a un elemento*/
+    align-self: stretch;
+    
+}
+.flex_item:nth-child(2){
+    background-color: #0f0;
+    /*Se encoge mas que los otros elementos*/
+    flex-shrink: 2;
+}
+.flex_item:last-child{
+    background-color: #00f;
+ 
+}
