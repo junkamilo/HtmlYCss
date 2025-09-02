@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #c7c7c7
+}
+.flex_content{
+    width: 80%;
+    height: 40vh;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+.flex_item{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.flex_item:first-child{
+    background-color: #f00;
+    /*le damos orden de manera visual ya que en el dom se mentiene el orden original*/
+    order: 3;
+}
+.flex_item:nth-child(2){
+    background-color: #0f0;
+    /*le damos orden de manera visual ya que en el dom se mentiene el orden original*/
+    order: 1;
+}
+.flex_item:last-child{
+    background-color: #00f;
+    /*le damos orden de manera visual ya que en el dom se mentiene el orden original*/
+    order: 2;
+}

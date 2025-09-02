@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/clasesHtmlCss/clasesCss/css/flexAlineacion.css">
+    <title>Flex Alineaciòn</title>
+</head>
+<body>
+    <h1>Aprendiendo Flexbox </h1>
+    <h2>justify-content</h2>
+    <ul>
+        <li><a href="#flex_start">flex_start</a></li>
+        <li><a href="#flex_end">flex_end</a></li>
+        <li><a href="#flex_center">flex_center</a></li>
+        <li><a href="#flex_space_between">flex_space_between</a></li>
+        <li><a href="#flex_space_around">flex_space_around</a></li>
+        <li><a href="#flex_space_evenly">flex_space_evenly</a></li>
+    </ul>
+    <h2>justify-content: flex_start</h2>
+    <p>Alineamos los elemetos por defecto</p>
+    <div class="flex" id="flex_start">
+        <div class="item_flex">Item 1</div>
+        <div class="item_flex">Item 2</div>
+        <div class="item_flex">Item 3</div>
+        <div class="item_flex">Item 4</div>
+        <div class="item_flex">item 5</div>
+        <div class="item_flex">item 6</div>
+    </div>
+    <h2>justify-content: flex_end con align-items: stretch</h2>
+    <p>Alineamos los elementos al final del contenido, y para alinear una sola linea de elemento utilizamo align-items</p>
+    <div class="flex flex_end" id="flex_end">
+        <div class="item_flex">Item 1</div>
+        <div class="item_flex">Item 2</div>
+        <div class="item_flex">Item 3</div>
+        <div class="item_flex">Item 4</div>
+    </div>
+    <h2>justify-content: flex_center con align-content: start</h2>
+    <p>Alineamos los elementos al centro del contenido, Alineamos con align-content para alinear varias lienas de elementos</p>
+    <div class="flex flex_center" id="flex_center">
+        <div class="item_flex">Item 1</div>
+        <div class="item_flex">Item 2</div>
+        <div class="item_flex">Item 3</div>
+        <div class="item_flex">Item 4</div>
+        <div class="item_flex">item 5</div>
+        <div class="item_flex">item 6</div>
+        <div class="item_flex">item 6</div>
+        <div class="item_flex">item 6</div>
+        <div class="item_flex">item 6</div>
+        <div class="item_flex">item 6</div>
+    </div>
+    <h2>justify-content: flex_space_between con align-items: center</h2>
+    <p>1)elemento al principio del contenedor, ultimo elemento)al final del contenedor
+    y los otros en el medio</p>
+    <div class="flex flex_space_between" id="flex_space_between">
+        <div class="item_flex">Item 1</div>
+        <div class="item_flex">Item 2</div>
+        <div class="item_flex">Item 3</div>
+        <div class="item_flex">Item 4</div>
+        <div class="item_flex">item 5</div>
+        <div class="item_flex">item 6</div>
+    </div>
+    <h2>justify-content: flex_space_around con align-items: start</h2>
+    <p>hace que cada elemento tenga una separacion mas o menos por igual</p>
+    <div class="flex flex_space_around" id="flex_space_around">
+        <div class="item_flex">Item 1</div>
+        <div class="item_flex">Item 2</div>
+        <div class="item_flex">Item 3</div>
+        <div class="item_flex">Item 4</div>
+        <div class="item_flex">item 5</div>
+        <div class="item_flex">item 6</div>
+    </div>
+    <h2>justify-content: flex_space_evenly con align-items: baseline</h2>
+    <p>hace que cada elemento tenga una separacion absolutamente por igual</p>
+    <div class="flex flex_space_evenly" id="flex_space_evenly">
+        <div class="item_flex">Item 1</div>
+        <div class="item_flex">Item 2</div>
+        <div class="item_flex">Item 3</div>
+        <div class="item_flex">Item 4</div>
+        <div class="item_flex">item 5</div>
+        <div class="item_flex">item 6</div>
+    </div>
+</body>
+</html>

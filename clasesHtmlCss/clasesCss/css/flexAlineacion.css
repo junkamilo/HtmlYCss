@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+}
+
+h2 {
+    padding: 0 0 0 10px;
+    margin: 0 0 1% 0;
+}
+
+ul {
+    width: 100%;
+    height: auto;
+    margin: 0 0 5% 0;
+    line-height: 180%;
+    padding: 0 0 0 3%;
+    box-sizing: border-box;
+}
+
+li {
+    font-size: 20px;
+}
+
+p {
+    margin: 0 0 10px 10px;
+}
+
+.flex{
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+    /*alinea los elemento en el eje principal sea con row o colum osea en su main axis*/
+    /*alieneacion por defecto*/
+    justify-content: start;
+    flex-flow: row wrap;
+    margin: 0 0 5% 0;
+    border: 1px solid black;
+}
+.flex_end{
+    /*Alineamos los elementos al final del contenido*/
+    justify-content: end;
+    /*alienamos con alignt-items para una sola linea de elementos*/
+    align-items: stretch;
+}
+.flex_center{
+    /*Alineamos los elementos al centro del contenido*/
+    justify-content: center;
+    /*Alineamos con align-content para alinear varias lienas de elementos*/
+    align-content: start;
+}
+.flex_space_between{
+    /*1)elemento al principio del contenedor, ultimo elemento)al final del contenedor
+    y los otros en el medio*/
+    justify-content: space-between;
+    align-items: center;
+}
+.flex_space_around{
+    /*hace que cada elemento tenga una separacion mas o menos por igual*/
+    justify-content: space-around;
+    align-items: start;
+}
+.flex_space_evenly{
+    /*hace que cada elemento tenga una separacion absolutamente por igual*/
+    justify-content: space-evenly;
+    /*hace que se alinea con el texto cuando el texto crece*/
+    align-items: baseline;
+}
+.item_flex {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: #FF6961;
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
