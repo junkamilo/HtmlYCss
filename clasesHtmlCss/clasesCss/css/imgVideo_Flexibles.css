@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*la forma correcta de trabajar con imagenes, se ajuzta a cualquier pantalla*/
+img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+/*la forma de hacer los videos flexibles*/
+.content__video{
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+video{
+    width: 100%;
+}

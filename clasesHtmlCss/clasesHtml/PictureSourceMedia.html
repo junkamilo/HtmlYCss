@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/clasesHtmlCss/clasesHtml/css/PictureSourceMedia.css">
+    <title>PictureSourceMedia</title>
+</head>
+<body>
+    <!-- 
+El elemento <picture> se usa para mostrar imágenes responsivas.
+Permite definir varias fuentes (<source>) con condiciones,
+y el navegador elegirá la que mejor se adapte al tamaño del viewport.
+Si ninguna condición se cumple, usa la <img> de respaldo.
+-->
+<picture>
+
+  <!-- 
+  <source>: primera opción
+  - media="(max-width:300px)" → si la pantalla mide 300px o menos,
+    el navegador cargará "vectorMediana.jpg".
+  -->
+  <source media="(max-width:300px)" 
+          srcset="/clasesHtmlCss/clasesHtml/imagenes/vectorMediana.jpg">
+
+  <!-- 
+  <source>: segunda opción
+  - media="(max-width:600px)" → si la pantalla mide 600px o menos
+    (y más de 300px), el navegador cargará "vectorGrande.jpg".
+  -->
+  <source media="(max-width:600px)" 
+          srcset="/clasesHtmlCss/clasesHtml/imagenes/vectorGrande.jpg">
+
+  <!-- 
+  <img>: imagen de respaldo (fallback).
+  - Se muestra si ninguna de las condiciones anteriores aplica,
+    o si el navegador no soporta <picture>/<source>.
+  - Aquí también va el atributo alt para accesibilidad.
+  -->
+  <img src="/clasesHtmlCss/clasesHtml/imagenes/vectorGrande.jpg" 
+       alt="Logo de la tienda de música">
+
+</picture>
+
+</body>
+</html>
