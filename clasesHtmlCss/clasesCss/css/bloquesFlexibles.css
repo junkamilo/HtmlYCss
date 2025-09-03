@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.content_bloques{
+    width: 100%;        /* El contenedor intenta ocupar todo el ancho disponible */
+    max-width: 900px;   /* Pero nunca va a superar los 900px */
+    min-width: 500px;   /* Pero nunca será más pequeño de 500px */
+    min-height: 500px; /* La caja nunca será más baja que 500px */
+   /* max-height: 600px; /* La caja nunca crecerá más de 600px */
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 5%;
+}
+.bloque__max-width{
+    /*tamaño maximo para crecer*/
+    max-width: 500px;
+    height: 200px;
+    border: 1px solid #000;
+}
+.bloque__min-width{
+    /*tamaño minimo para dejar de encojerse*/
+    min-width: 300px;
+    height: 200px;
+    border: 1px solid #000;
+}
+span{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
