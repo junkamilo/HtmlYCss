@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/clasesHtmlCss/clasesCss/css/gridRepeatMinmax.css">
+    <title>Grid</title>
+</head>
+
+<body>
+    <h1>Grid</h1>
+    <div class="content__context">
+        <h2>Creando una grid</h2>
+        <p>Definimos 3 columnas con la función repeat(3, ...):
+   - Cada columna tendrá un tamaño flexible gracias a minmax().
+   - minmax(100px, 500px) significa:
+        * El ancho mínimo de cada columna será de 100px.
+        * El ancho máximo de cada columna podrá crecer hasta 500px,
+          dependiendo del espacio disponible en el contenedor.
+   En resumen: las 3 columnas nunca serán más pequeñas de 100px
+   y nunca más grandes de 500px.</p>
+   <p>
+    Definimos 2 fila con la función repeat(2, ...):
+   - Cada fila tendrá un tamaño flexible gracias a minmax().
+   - minmax(200px, 500px) significa:
+        * El ancho mínimo de cada fila será de 100px.
+        * El ancho máximo de cada fila podrá crecer hasta 500px,
+          dependiendo del espacio disponible en el contenedor.
+   En resumen: las 2 filas nunca serán más pequeñas de 100px
+   y nunca más grandes de 500px.
+   </p>
+        <code>
+        display: grid;<br>
+        grid-template-columns: repeat(3, minmax(100px, 500px));<br>
+        grid-template-rows: repeat(2, minmax(200px, 500px));<br>
+        </code>
+    </div>
+
+    <div class="content__grid">
+        <div class="item__grid">item 1</div>
+        <div class="item__grid">item 2</div>
+        <div class="item__grid">item 3</div>
+        <div class="item__grid">item 4</div>
+        <div class="item__grid">item 5</div>
+        <div class="item__grid">item 6</div>
+    </div>
+</body>
+
+</html>

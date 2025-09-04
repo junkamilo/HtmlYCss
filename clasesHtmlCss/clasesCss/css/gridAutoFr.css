@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0 10px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.content__grid{
+    /*le damos al alemento padre la grilla que es grid*/
+    display: grid;
+    height: 80vh;
+    /*Resumen práctico:
+      - auto → "tamaño según contenido"
+      - 1fr → "toma la parte proporcional del espacio sobrante" (flexible)*/
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    border: 1px solid black
+}
+.item__grid{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*content text*/
+.content__context{
+    padding: 2%;
+    box-sizing: border-box;
+}

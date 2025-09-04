@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0 10px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.content__grid{
+    /*le damos al alemento padre la grilla que es grid*/
+    display: grid;
+    /*asignamos tres columnas a la grid con sus medidas*/
+    grid-template-columns: 100px 200px 300px;
+    /*asignamos dos filas a la grid cada una con sus medidas*/
+    grid-template-rows: 100px 300px;
+    border: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.item__grid{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*content text*/
+.content__context{
+    padding: 2%;
+    box-sizing: border-box;
+}

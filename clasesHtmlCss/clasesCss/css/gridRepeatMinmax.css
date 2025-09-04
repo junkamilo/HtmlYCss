@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0 10px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.content__grid {
+    display: grid;
+    height: 100vh;
+    /* 
+   Definimos 3 columnas con la función repeat(3, ...):
+   - Cada columna tendrá un tamaño flexible gracias a minmax().
+   - minmax(100px, 500px) significa:
+        * El ancho mínimo de cada columna será de 100px.
+        * El ancho máximo de cada columna podrá crecer hasta 500px,
+          dependiendo del espacio disponible en el contenedor.
+   En resumen: las 3 columnas nunca serán más pequeñas de 100px
+   y nunca más grandes de 500px.
+*/
+    grid-template-columns: repeat(3, minmax(100px, 500px)) 1fr;
+    /* 
+   Definimos 2 fila con la función repeat(2, ...):
+   - Cada fila tendrá un tamaño flexible gracias a minmax().
+   - minmax(200px, 500px) significa:
+        * El ancho mínimo de cada fila será de 100px.
+        * El ancho máximo de cada fila podrá crecer hasta 500px,
+          dependiendo del espacio disponible en el contenedor.
+   En resumen: las 2 filas nunca serán más pequeñas de 100px
+   y nunca más grandes de 500px.
+*/
+    grid-template-rows: repeat(2, minmax(200px, 500px));
+    border: 1px solid black
+}
+
+.item__grid {
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*content text*/
+.content__context {
+    padding: 2%;
+    box-sizing: border-box;
+}
