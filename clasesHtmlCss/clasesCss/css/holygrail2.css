@@ -1,93 +1,191 @@
-body{
-    margin: 0;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    justify-content: center;
-}
-body , div {
-    box-sizing: border-box;
-}
-.main__wrapper , header , footer{
-    width: 100%;
-}
-/*header*/
-header{
-    background-color: #48e;
-}
-.main__navbar{
-    background-color: #48e;
-}
-.main__navbar ul{
-    display: flex;
-    padding: 0;
-}
-.main__navbar li{
-    list-style: none;
-    margin: 4px;
-}
-.main__navbar a{
-    color: #fff;
-    display: inline-block;
-    padding: 9px;
+/* Paleta de Colores Pastel */
+:root {
+    --bg-light: #F9F7F6;
+    --bg-medium: #F3F0EC;
+    --bg-dark: #D4E9F9;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --accent-pastel: #A2B9BC;
+    --link-color: #8C8C91;
+    --link-hover: #48484B;
 }
 
-nav a{
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-light);
+    color: var(--text-primary);
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.main__wrapper, header, footer {
+    width: 100%;
+}
+
+/* Header */
+header {
+    background-color: var(--bg-medium);
+    border-bottom: 1px solid var(--accent-pastel);
+    padding: 1rem 0;
+}
+
+.main__navbar ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea */
+}
+
+.main__navbar li {
+    margin: 0 10px;
+}
+
+.main__navbar a {
+    color: var(--text-primary);
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    font-weight: 600;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.main__navbar a:hover {
+    color: var(--bg-light);
+    background-color: var(--link-hover);
+}
+
+nav a {
     text-decoration: none;
 }
-/*main wrapper*/
-.main__wrapper{
+
+a:hover {
+    opacity: 0.9;
+}
+
+h1, h2, h3, h4 {
+    text-wrap: balance;
+    color: var(--link-hover);
+}
+
+p {
+    text-wrap: pretty;
+    line-height: 1.6;
+}
+
+/* Main Wrapper - Holy Grail Layout con Flexbox */
+.main__wrapper {
     display: flex;
     flex-grow: 1;
     max-width: 1200px;
+    margin: 2rem auto; /* Centra el contenedor y le da espacio */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px;
 }
-aside ,  main{
-    border: 1px solid red;
+
+aside, main {
+    background-color: var(--bg-medium);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    flex-basis: 0;
 }
-.main__wrapper aside{
+
+aside {
     flex-grow: 1;
+    min-width: 250px;
 }
-.secondary__navbar{
-    min-width: 12rem;
-    text-align: center;
+
+main {
+    flex-grow: 2; /* Main toma el doble de espacio */
+    min-width: 300px;
 }
-.secondary__navbar ul{
-    padding: 0;
+
+.secondary__navbar {
+    background-color: var(--bg-dark);
 }
-.secondary__navbar li{
+
+.secondary__navbar nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.secondary__navbar a{
-    color: #48a;
+
+.secondary__navbar li {
+    margin: 5px 0;
+}
+
+.secondary__navbar a {
+    color: var(--text-primary);
     text-decoration: none;
-    display: inline-block;
-    padding: 6px 10px;
+    display: block;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
-aside , main{
-    padding: 10px 20px;
+
+.secondary__navbar a:hover {
+    background-color: var(--accent-pastel);
 }
-/*footer*/
-footer{
+
+aside:last-child {
+    min-width: 250px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--link-hover);
+    color: var(--bg-light);
+    padding: 30px;
+    text-align: center;
+    font-weight: 300;
     margin-top: auto;
-    border: 1px solid red;
-    box-sizing: border-box;
-    background-color: #333;
-    color: #fff;
-    padding: 40px;
+    border-top: 1px solid var(--accent-pastel);
 }
-aside:last-child{
-    min-width: 10rem;
-}
-/*media querys*/
-@media only screen and (max-width:800px){
-    aside:last-child{
-        display: none;
+/* Media Queries */
+
+/* Pantallas grandes (Holy Grail Layout) */
+@media only screen and (min-width: 1024px) {
+    .main__wrapper {
+        flex-wrap: nowrap;
     }
 }
-@media only screen and (max-width:400px){
-    .main__wrapper{
+
+/* Tablets y pantallas medianas */
+@media only screen and (max-width: 1023px) {
+    .main__wrapper {
         flex-direction: column;
+        align-items: center;
+    }
+    aside, main {
+        width: 90%;
+        max-width: 700px;
+    }
+    aside:last-child {
+        display: none; /* Oculta la barra lateral derecha para una mejor experiencia móvil */
+    }
+}
+
+/* Teléfonos móviles */
+@media only screen and (max-width: 600px) {
+    .main__navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__navbar li {
+        margin: 5px 0;
+    }
+    h1 {
+        font-size: 1.8rem;
     }
 }

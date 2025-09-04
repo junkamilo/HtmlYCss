@@ -1,0 +1,64 @@
+/* reset básico: quita márgenes/paddings por defecto y define la tipografía */
+body{
+    margin: 0;              /* elimina el margin por defecto del body */
+    padding: 0;             /* elimina el padding por defecto del body */
+    font-family: sans-serif;/* define la fuente base para todo el documento */
+}
+
+/* convierto .container en un "containing element" para container queries */
+.container{
+    container-type: inline-size; /* hace que el contenedor mida su dimensión inline (ancho en escritura horizontal).
+                                   Es decir, las consultas de contenedor reaccionarán al ancho del .container. */
+    container-name: main;        /* le damos el nombre "main" para referirnos a este contenedor en @container */
+}
+
+/* estilo base para los párrafos dentro (estado por defecto) */
+p{
+    font-size: 8px; /* tamaño base pequeño — será el estilo si no se cumple la condición del @container */
+}
+
+/* consulta de contenedor: cuando el contenedor llamado "main" tenga un ancho <= 500px */
+@container main (max-width:500px){
+    p{
+        font-size: 20px;          /* aumenta el tamaño de fuente cuando el contenedor es pequeño (≤500px) */
+        color: #f00;              /* cambia el color del texto a rojo */
+        background-color: #000;   /* fondo negro para que el texto rojo contraste */
+    }
+}
+
+/* convertimos .card-wrap en contenedor que mide ancho */
+.card-wrap{
+  container-type: inline-size; /* observamos el ancho del contenedor */
+  container-name: cardwrap;    /* nombre para la consulta */
+  max-width: 900px;            /* solo para ejemplo visual */
+  margin: 1rem;
+}
+
+/* estado base: tarjeta en columna (para móviles o contenedores estrechos) */
+.card{
+  display: flex;
+  flex-direction: column; /* imagen arriba, contenido debajo */
+  gap: 0.75rem;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+}
+
+/* imagen adaptable */
+.card img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* cuando el contenedor tenga al menos 600px de ancho, cambia a layout en fila */
+@container cardwrap (min-width: 600px){
+  .card{
+    flex-direction: row;       /* imagen a la izquierda, contenido a la derecha */
+    align-items: center;
+  }
+  .card img{
+    width: 300px;              /* dimensión fija adecuada para la fila */
+    flex-shrink: 0;
+  }
+}
+

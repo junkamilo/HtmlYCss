@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*si el navegador soporta grid hacemos cambios de grid en el body*/
+@supports(display: grid){
+    body{
+        display: grid;
+        grid-template-columns: 10%;
+    }
+}
+/*si el navegador no soporta grid, hacemos cambios en el body con flex*/
+@supports not (display: grid){
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
