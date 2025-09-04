@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*media querys para impresiones*/
+@media print{
+     body{
+        font-size: 100pt;
+        background-color: #000;
+        color: #ffff;
+     }
+}
+.content__flex{
+    display: flex;
+}
+
+.flex__item{
+    background-color: #ccc;
+    padding: 30px;
+    border: 1px solid red;
+    flex: 1;
+}
+/*para todo lo dispositivo que tenga pantalla*/
+/*los cambios se aplicaran cuando la pantalla sea menor o igual <= 500px*/
+@media screen and (max-width:400px) {
+    .content__flex{
+        flex-direction: column;
+    }
+}
