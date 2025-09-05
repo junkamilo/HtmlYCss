@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0 10px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.content__grid{
+    display: grid;
+    height: 80vh;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    border: 1px solid black;
+    box-sizing: border-box;
+    /*Separamos las columnas*/
+    column-gap: 10px;
+    /*Separamos las filas*/
+    row-gap: 10px;
+    /*shourtgand:
+    primer parametro = filas
+    segundo parametro = columnas
+    */
+    gap: 10px 10px;
+    /*mismo valor de gap se la al mismo valor padding*/
+    padding: 10px;
+}
+.item__grid{
+    background-color: #48e;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*content text*/
+.content__context{
+    padding: 2%;
+    box-sizing: border-box;
+}

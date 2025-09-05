@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/clasesHtmlCss/clasesCss/css/gridExplicitoImplicito.css">
+    <title>gridExplicitoImplicito</title>
+</head>
+
+<body>
+    <h1>Grid</h1>
+    <div class="content__context">
+        <h2>Creando grid explicito</h2>
+        <p>Grid explícita 👉 son las filas y columnas que defines tú mismo con grid-template-rows y grid-template-columns. (ej: 3 columnas, 2 filas).</p>
+        <code>
+        display: grid;<br>
+        grid-template-columns: repeat(3,1fr);;<br>
+        grid-template-rows: repeat(3,1fr);<br>
+        </code>
+    </div>
+
+    <div class="content__grid">
+        <div class="item__grid">item 1</div>
+        <div class="item__grid">item 2</div>
+        <div class="item__grid">item 3</div>
+        <div class="item__grid">item 4</div>
+        <div class="item__grid">item 5</div>
+        <div class="item__grid">item 6</div>
+    </div>
+        <div class="content__context">
+        <h2>Creando Grid implícita</h2>
+        <p>Grid implícita 👉 son las filas o columnas que no definiste, pero que el navegador crea automáticamente cuando los elementos necesitan más espacio.</p>
+        <code>
+        display: grid;<br>
+        grid-template-columns: repeat(3,1fr);;<br>
+        grid-template-rows: repeat(3,1fr);<br>
+        grid-auto-rows: 30px;<br>
+        grid-auto-flow: column; <br>
+        grid-auto-columns: 20px;<br>
+        </code>
+    </div>
+
+    <div class="content__grid">
+        <div class="item__grid">item 1</div>
+        <div class="item__grid">item 2</div>
+        <div class="item__grid">item 3</div>
+        <div class="item__grid">item 4</div>
+        <div class="item__grid">item 5</div>
+        <div class="item__grid">item 6</div>
+        <div class="item__grid">item 7</div>
+        <div class="item__grid">item 8</div>
+        <div class="item__grid">item 9</div>
+        <div class="item__grid">item 10</div>
+        <div class="item__grid">item 11</div>
+        <div class="item__grid">item 12</div>
+        <div class="item__grid">item 13</div>
+        <div class="item__grid">item 14</div>
+        <div class="item__grid">item 15</div>
+    </div>
+
+</body>
+
+</html>

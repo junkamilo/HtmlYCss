@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0 10px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.content__grid{
+    /*le damos al alemento padre la grilla que es grid*/
+    display: grid;
+    height: 80vh;
+    /*Resumen práctico:
+      - auto → "tamaño según contenido"
+      - 1fr → "toma la parte proporcional del espacio sobrante" (flexible)*/
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    /*las filas que no tienen tamaño se le agrega el auto-rows*/
+    grid-auto-rows: 30px;
+    /*cambiamos el flujo a columna*/
+    grid-auto-flow: column;
+    /*Agregamos las auto column*/
+    grid-auto-columns: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.content__grid > .item__grid:is(:nth-child(10),:nth-child(11),:nth-child(12),:nth-child(13),:nth-child(14),:nth-child(15),){
+ background-color: blue;
+}
+.item__grid{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*content text*/
+.content__context{
+    padding: 2%;
+    box-sizing: border-box;
+}
