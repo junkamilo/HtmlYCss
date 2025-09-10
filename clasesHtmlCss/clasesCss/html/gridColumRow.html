@@ -4,22 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/clasesHtmlCss/clasesCss/css/gridDinamico.css">
-    <title>Grid Dinamico</title>
+    <link rel="stylesheet" href="/clasesHtmlCss/clasesCss/css/gridColumRow.css">
+    <title>Grid Row y Column</title>
 </head>
 
 <body>
     <h1>Grid</h1>
     <div class="content__context">
-        <h2>Creando grid Dinamico</h2>
-        <p>Se crea una grid responsive con auto-fit</p>
+        <h2>Grid column y Grid row</h2>
+        <p>Se utilizan propiedades como grid-column-etart,end grid-row-start,end</p>
         <code>
         display: grid;<br>
         row-gap: 10px;<br>
         column-gap: 10px;<br>
         gap: 10px 10px;<br>
         padding: 10px;<br>
-        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));<br>
+            <br>
+        .item__grid:nth-child(1){<br>
+        background-color: #e44;<br>
+        grid-column-start: 1;<br>
+        grid-column-end: 3;<br>
+        grid-row-start: 1;<br>
+        grid-row-end: 3;<br>
+}
         </code>
     </div>
 
@@ -33,15 +41,21 @@
     </div>
 
     <div class="content__context">
-        <h2>Creando grid Dinamico</h2>
-        <p>Se crea una grid resposinve </p>
+        <h2>Grid column y Grid row</h2>
+        <p>Se utiliza grid-colum, grid-row con span</p>
         <code>
         display: grid;<br>
         row-gap: 10px;<br>
         column-gap: 10px;<br>
         gap: 10px 10px;<br>
         padding: 10px;<br>
-        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));<br>
+            <br>
+        .item__grid:nth-child(4){<br>
+        background-color: rgb(94, 19, 245);<br>
+        grid-column: 2 / span 2;<br>
+        grid-row: 4 / span 2;<br>
+}
         </code>
     </div>
 
@@ -52,7 +66,12 @@
         <div class="item__grid">item 4</div>
         <div class="item__grid">item 5</div>
         <div class="item__grid">item 6</div>
-        <div class="item__grid">item 6</div>
+        <div class="item__grid">item 7</div>
+        <div class="item__grid">item 8</div>
+        <div class="item__grid">item 9</div>
+        <div class="item__grid">item 10</div>
+        <div class="item__grid">item 11</div>
+        <div class="item__grid">item 12</div>
     </div>
 
 </body>

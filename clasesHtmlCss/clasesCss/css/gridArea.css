@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0 10px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header,nav,main,aside,footer{
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 20px;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+footer:hover{
+    background-color: #ccc;
+    transition: .3s;
+    cursor: pointer;
+
+}
+aside:hover{
+    background-color: #ccc;
+    transition: .3s;
+    cursor: pointer;
+
+}
+.content__grid{
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    /*se utiliza grid-auto-flow: dense; para llenar espacios que visualemente quedan vacios*/
+    grid-auto-flow: dense;
+    border: 1px solid black;
+    box-sizing: border-box;
+    gap: 10px 10px;
+    padding: 10px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer";
+}
+.item__grid:nth-child(7){
+    background-color: #e44;
+    /*grid area:width:
+    primer valor: grid row start  
+    segundo valor: grid column start
+    tercer valor: grid row end
+    cuarto valor: grid column end ;*/
+    grid-area: 1 / 1 / 3 / 3;
+    /*grid area:
+    vas a tomar 2 filas
+    vas a crecaer tres columnas;*/
+    grid-area: span 2 / span 3;
+}
+.item__grid{
+    background-color: #48e;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -7,18 +7,17 @@ body{
 .content__grid{
     display: grid;
     height: 80vh;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-columns: repeat(3,200px);
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    /*se utiliza grid-auto-flow: dense; para llenar espacios que visualemente quedan vacios*/
+    grid-auto-flow: dense;
     border: 1px solid black;
     box-sizing: border-box;
     gap: 10px 10px;
     padding: 10px;
 }
-.auto__fit{
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-}
-.auto__fill{
-    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+.item__grid:nth-child(7){
+    background-color: #e44;
+    grid-column: span 4;
 }
 .item__grid{
     background-color: #48e;
@@ -27,9 +26,4 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-/*content text*/
-.content__context{
-    padding: 2%;
-    box-sizing: border-box;
 }
