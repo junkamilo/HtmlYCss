@@ -1,8 +1,139 @@
 @import url("/proyectosHtmlCss/OnePieceWeb/css/cardPersonaje.css");
+/* Paleta de colores de One Piece: inspirada en el sol, el mar y los piratas */
+:root {
+    --color-fondo-principal: #2c3e50; /* Azul marino oscuro para el fondo */
+    --color-acento-dorado: #FFD700; /* Dorado para títulos y detalles, como monedas */
+    --color-marron-oscuro: #5C4033; /* Marrón para marcos y elementos de madera */
+    --color-rojo-pirata: #DC0F0D; /* El rojo característico de la Jolly Roger */
+    --color-crema-papel: #fdf5e6; /* Color de pergamino o mapa */
+}
 
+/* ------------------------------------------------------------------------------------------------------ */
+/* ESTILOS GLOBALES */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #2c3e50;
+    background-color: var(--color-fondo-principal);
+    font-family: 'Pirata One', cursive; /* Fuente por defecto, pero se ajustará en cada sección */
+}
+
+.body__contayner {
+    display: grid;
+    box-sizing: border-box;
+    border: 1px solid var(--color-marron-oscuro);
+    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-rows: auto minmax(1fr, auto) auto;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ESTILOS DE CADA SECCIÓN */
+
+.header {
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: var(--color-marron-oscuro);
+    color: var(--color-acento-dorado);
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 3px solid var(--color-rojo-pirata);
+}
+
+.header__title {
+    font-family: 'Pirata One', cursive;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #000;
+    margin: 0;
+}
+
+.nav {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-right: 2px dashed var(--color-acento-dorado);
+    padding: 1rem 0;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav__link {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    color: var(--color-crema-papel);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav__link:hover {
+    background-color: var(--color-acento-dorado);
+    color: var(--color-marron-oscuro);
+}
+
+.main {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: transparent; /* El fondo de la tarjeta es el que lleva el diseño */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.aside {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border-left: 2px dashed var(--color-acento-dorado);
+    padding: 1.5rem;
+    color: var(--color-crema-papel);
+}
+
+.aside__title {
+    font-family: 'Pirata One', cursive;
+    font-size: 1.5rem;
+    color: var(--color-acento-dorado);
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px solid var(--color-rojo-pirata);
+    padding-bottom: 0.5rem;
+}
+
+.news__title {
+    font-family: 'Pirata One', cursive;
+    font-size: 1.2rem;
+    color: var(--color-rojo-pirata);
+    margin: 1rem 0 0.5rem 0;
+}
+
+.news__description {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+.footer {
+    grid-area: 3 / 1 / 4 / 4;
+    background-color: var(--color-marron-oscuro);
+    color: var(--color-crema-papel);
+    text-align: center;
+    padding: 1rem;
+    border-top: 3px solid var(--color-rojo-pirata);
+}
+
+.footer__text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    margin: 0;
 }
