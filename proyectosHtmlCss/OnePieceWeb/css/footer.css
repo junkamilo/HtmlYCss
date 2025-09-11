@@ -1,0 +1,15 @@
+.footer {
+    grid-area: 3 / 1 / 4 / 4;
+    background-color: var(--color-marron-oscuro);
+    color: var(--color-crema-papel);
+    text-align: center;
+    padding: 1rem;
+    z-index: 2;
+    height: 100%;
+}
+
+.footer__text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    margin: 0;
+}

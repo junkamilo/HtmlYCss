@@ -1,0 +1,31 @@
+.header {
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: var(--color-marron-oscuro);
+    color: var(--color-acento-dorado);
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content__logo {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 100%;
+    background-image: url("/proyectosHtmlCss/OnePieceWeb/img/logo/logoOnePiece.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    box-shadow: 2px 2px 4px #000;
+}
+
+.header__title {
+    font-family: 'Pirata One', cursive;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #000;
+    margin: 0;
+    width: fit-content;
+}

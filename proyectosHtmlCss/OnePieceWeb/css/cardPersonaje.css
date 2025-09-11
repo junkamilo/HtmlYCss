@@ -5,7 +5,6 @@
 .content__personaje {
     width: 65%;
     max-width: 800px;
-    margin: 50px auto;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     grid-template-rows: repeat(2, 15rem);

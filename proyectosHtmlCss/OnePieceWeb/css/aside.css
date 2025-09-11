@@ -1,0 +1,30 @@
+.aside {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 1.5rem;
+    color: var(--color-crema-papel);
+}
+
+.aside__title {
+    font-family: 'Pirata One', cursive;
+    font-size: 1.5rem;
+    color: var(--color-acento-dorado);
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px solid var(--color-rojo-pirata);
+    padding-bottom: 0.5rem;
+}
+
+.news__title {
+    font-family: 'Pirata One', cursive;
+    font-size: 1.2rem;
+    color: var(--color-rojo-pirata);
+    margin: 1rem 0 0.5rem 0;
+}
+
+.news__description {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
