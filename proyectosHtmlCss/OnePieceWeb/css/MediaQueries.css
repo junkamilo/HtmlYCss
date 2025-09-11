@@ -1,0 +1,29 @@
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  /* Estilos que se aplican solo entre 480px y 768px */
+  .body__grid{
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 12vh 1fr 10vh;
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer";
+}
+    .aside{
+        display: none;
+    }
+}
+@media screen and (min-width: 150px) and (max-width: 399px) {
+  /* Estilos que se aplican solo entre 480px y 768px */
+  .body__grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 10vh 1fr 10vh;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+    .aside{
+        display: none;
+    }
+}
