@@ -3,38 +3,5 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.body__grid{
-    border: 1px solid black;
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #E3EEEF;
-    display: grid;
-    grid-template-columns: 150px 1fr 200px;
-    grid-template-rows: 12vh 1fr 10vh;
-    grid-template-areas: 
-    "header header header"
-    "nav main aside"
-    "footer footer footer";
-}
-.header{
-    border: 1px solid black;
-    grid-area: header;
-}
-.nav{
-    border: 1px solid black;
-    grid-area: nav;
-}
-.main{
-    border: 1px solid black;
-    grid-area: main;
-}
-.aside{
-    border: 1px solid black;
-    grid-area: aside;
-}
-.footer{
-    border: 1px solid black;
-    grid-area: footer;
+    background-color: #D3F4FF;
 }
