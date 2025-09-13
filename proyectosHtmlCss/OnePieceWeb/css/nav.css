@@ -1,3 +1,11 @@
+.body__contayner {
+    display: grid;
+    box-sizing: border-box;
+    border: 1px solid var(--color-marron-oscuro);
+    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-rows: auto minmax(1fr, auto) auto;
+}
+
 .nav {
     grid-area: 2 / 1 / 3 / 2;
     background-color: rgba(255, 255, 255, 0.1);
@@ -5,7 +13,7 @@
     box-sizing: border-box;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 100;
 }
 
 .titulo_personaje {
@@ -37,7 +45,7 @@ li {
     align-items: center;
 }
 
-li>.nav__link {
+li > .nav__link {
     display: block;
     width: 100%;
     padding: 0.8rem 1rem;
@@ -52,4 +60,3 @@ li>.nav__link {
     background-color: var(--color-acento-dorado);
     color: var(--color-marron-oscuro);
 }
-/*mediaquerys*/

@@ -33,6 +33,27 @@
     filter: drop-shadow(4px 4px 10px #000000);
     border-right: 2px dashed #4b2b1a;
 }
+.main > .content__personaje:nth-child(2) > .img__personaje {
+    background-image: url("/proyectosHtmlCss/OnePieceWeb/img/zoro/pngwing.com.png");
+}
+.main > .content__personaje:nth-child(3) > .img__personaje {
+    background-image: url("/proyectosHtmlCss/OnePieceWeb/img/usopp/pngwing.com.png");
+}
+.main > .content__personaje:nth-child(4) > .img__personaje {
+    background-image: url("/proyectosHtmlCss/OnePieceWeb/img/shopper/pngwing.com.png");
+}
+.main > .content__personaje:nth-child(5) > .img__personaje {
+    background-image: url("/proyectosHtmlCss/OnePieceWeb/img/sanji/pngwing.com.png");
+}
+.main > .content__personaje:nth-child(6) > .img__personaje {
+    background-image: url("/proyectosHtmlCss/OnePieceWeb/img/robin/pngwing.com.png");
+}
+.main > .content__personaje:nth-child(7) > .img__personaje {
+    background-image: url("/proyectosHtmlCss/OnePieceWeb/img/nami/pngwing.com.png");
+}
+.main > .content__personaje:nth-child(8) > .img__personaje {
+    background-image: url("/proyectosHtmlCss/OnePieceWeb/img/franky/pngwing.com.png");
+}
 
 .img__personaje:hover {
     transform: rotate(-2deg);
@@ -105,60 +126,4 @@
     background-size: contain;
     filter: drop-shadow(2px 4px 6px black);
     border: none;
-}
-
-/*media querys*/
-@media screen and (min-width: 500px) and (max-width: 700px) {
-    .content__personaje {
-        width: 55%;
-        max-width: 600px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 15rem);
-    }
-
-    .img__personaje {
-        grid-area: 1 / 1 / 2 / 2;
-        border-right: none;
-        border-bottom: 2px dashed #4b2b1a;
-    }
-
-    .content__informacion {
-        grid-area: 2 / 1 / 3 / 2;
-        border-bottom: 2px dashed #4b2b1a;
-        border-right: none;
-    }
-
-    .content__arma {
-        grid-area: 3 / 1 / 4 / 2;
-        border-right: none;
-        border-bottom: none;
-    }
-}
-
-@media screen and (min-width: 100px) and (max-width: 499px) {
-    .content__personaje {
-        width: 55%;
-        max-width: 600px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 10rem);
-    }
-
-    .img__personaje {
-        grid-area: 1 / 1 / 2 / 2;
-        border-right: none;
-    }
-
-    .content__informacion {
-        grid-area: 2 / 1 / 3 / 2;
-        border-bottom: none;
-    }
-
-    .nombre_personaje {
-        font-size: 1.5rem;
-        width: fit-content;
-    }
-
-    .content__arma {
-        display: none;
-    }
 }

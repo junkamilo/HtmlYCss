@@ -3,7 +3,6 @@
 @import url("/proyectosHtmlCss/OnePieceWeb/css/nav.css");
 @import url("/proyectosHtmlCss/OnePieceWeb/css/aside.css");
 @import url("/proyectosHtmlCss/OnePieceWeb/css/footer.css");
-
 :root {
     --color-fondo-principal: #2c3e50;
     --color-acento-dorado: #FFD700;
@@ -28,8 +27,6 @@ body {
     grid-template-rows: auto minmax(1fr, auto) auto;
 }
 
-/* ------------------------------------------------------------------------------------------------------ */
-/* ESTILOS DE CADA SECCIÓN */
 .main {
     grid-area: 2 / 2 / 3 / 3;
     background-color: transparent;
@@ -41,64 +38,4 @@ body {
     gap: 8rem;
     padding: 5rem 0 5rem 0;
     box-sizing: border-box;
-}
-
-/*media querys*/
-@media screen and (max-width: 600px) {
-    .body__contayner {
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto auto;
-    }
-    .header{
-        width: 100%;
-        padding: 1rem  0 0 0;
-    }
-    .nav {
-        grid-area: 2 / 1 / 3 / 2;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        backdrop-filter: blur(50px);
-    }
-
-    .nav__list {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    li {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        overflow: hidden;
-        font-weight: bold;
-    }
-    .main {
-        grid-area: 3 / 1 / 4 / 2;
-        width: 100%;
-        padding: 2rem 0 2rem 0;
-        gap: 4rem;
-    }
-
-    .aside {
-        grid-area: 4 / 1 / 5 / 2;
-        width: 100%;
-        height: auto;
-        padding: 2rem 0 2rem 0;
-    }
-
-    .footer {
-        grid-area: 5 / 1 / 6 / 2;
-        width: 100%;
-        height: auto;
-    }
-
 }
