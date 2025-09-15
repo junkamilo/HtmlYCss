@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.box{
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #48e;
+    border-radius: 39px;
+    box-sizing: border-box;
+}
+.barra{
+    margin: 20px;
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 6%;
+    box-sizing: border-box;
+    animation-name: llenar_barra;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    /*vas a quedarte como estabas antes de la animacion*/
+    animation-fill-mode: backwards;
+    /*arranca ya con la propiedad que le dimos y se queda llena*/
+    animation-fill-mode: both;
+    /*toma todos las propiedades que le dimos*/
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    /*cuantas veces repetimos la animacion
+    -infinite
+    -X numero
+    */
+    animation-iteration-count: infinite;
+    /*direciones de animacion: se ejecuta la animacion alrevez*/
+    animation-direction: reverse;
+    /*sube y vuelve*/
+    animation-direction: alternate;
+}
+/*pausamos la barra*/
+.barra:active{
+    /*cooremos la animacion*/
+    animation-play-state: running;
+    animation-play-state: paused;
+}
+/*creamos la animacion*/
+@keyframes llenar_barra{
+    from{
+        width: 0%;
+        background-color: rgb(92, 5, 255);
+    }
+    to{
+        width: 95%;
+        background-color: red;
+    }
+}
