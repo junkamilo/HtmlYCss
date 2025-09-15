@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/proyectosHtmlCss/MusicWeb/css/style.css">
+    <title>Music Web</title>
+</head>
+
+<body>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="header__logo-container">
+            <i class="fa-solid fa-headphones-simple header__logo-icon"></i>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#">Home</a></li>
+                <li class="header__nav-item"><a href="#generos">Explorar generos</a></li>
+                <li class="header__nav-item"><a href="#formulario">Se artista</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <img src="/proyectosHtmlCss/MusicWeb/img/imgMusic.png"
+                    alt="Abstract image with sound waves and light streaks" class="profile__img">
+            </div>
+            <div class="profile__data-container">
+                <div class="profile__descripction">
+                    <h1 class="profile__title">¿Qué es la música?</h1>
+                    <p>La música es el arte de organizar sonidos y silencios a lo largo del tiempo, creando melodías,
+                        armonías y ritmos que nos permiten expresar y evocar emociones profundas. Es una manifestación
+                        universal que conecta culturas y emociones.</p>
+                </div>
+                <div class="profile__tems-container">
+                    <h2 class="profile__subtitle">Géneros más populares</h2>
+                    <ul>
+                        <li class="profile__tem">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--100"></div>
+                            </div>
+                            <span class="profile__tems-name">Reggaeton</span>
+                        </li>
+                        <li class="profile__tem">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--60"></div>
+                            </div>
+                            <span class="profile__tems-name">Salsa</span>
+                        </li>
+                        <li class="profile__tem">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--40"></div>
+                            </div>
+                            <span class="profile__tems-name">Vallenato</span>
+                        </li>
+                        <li class="profile__tem">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--90"></div>
+                            </div>
+                            <span class="profile__tems-name">Bachata</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="generos" id="generos">
+        <h2 class="section-title">Explora los Géneros</h2>
+        <div class="content__generos">
+            <div class="content__img-generos">
+                <img src="https://images.unsplash.com/photo-1594247514332-9c97b817c756?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Reggaeton" class="img__generos">
+            </div>
+            <h3 class="name__generos">Reggaeton</h3>
+        </div>
+        <div class="content__generos">
+            <div class="content__img-generos">
+                <img src="https://images.unsplash.com/photo-1629858597143-4a15a8167f99?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Salsa" class="img__generos">
+            </div>
+            <h3 class="name__generos">Salsa</h3>
+        </div>
+        <div class="content__generos">
+            <div class="content__img-generos">
+                <img src="https://images.unsplash.com/photo-1625902049183-4a6c42a2e8c2?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Vallenato" class="img__generos">
+            </div>
+            <h3 class="name__generos">Vallenato</h3>
+        </div>
+        <div class="content__generos">
+            <div class="content__img-generos">
+                <img src="https://images.unsplash.com/photo-1617482813589-32219195e263?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Bachata" class="img__generos">
+            </div>
+            <h3 class="name__generos">Bachata</h3>
+        </div>
+        <div class="content__generos">
+            <div class="content__img-generos">
+                <img src="https://images.unsplash.com/photo-1617482813589-32219195e263?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Bachata" class="img__generos">
+            </div>
+            <h3 class="name__generos">Bachata</h3>
+        </div>
+    </section>
+
+    <section class="form_artista-content">
+    <h2 class="titulo_artista">¡Únete a la Escena Musical!</h2>
+    <form action="" class="form_artista" id="formulario">
+        <div class="names__usuario">
+            <label for="name_usuario">Nombre completo</label>
+            <input type="text" id="name_usuario" placeholder="Ej. Juan Pérez">
+        </div>
+        <div class="names__usuario">
+            <label for="artist_usuario">Nombre artístico</label>
+            <input type="text" id="artist_usuario" placeholder="Ej. J. P. Sounds">
+        </div>
+        <div class="names__usuario">
+            <label for="telefono_usuario">Número de teléfono</label>
+            <input type="tel" id="telefono_usuario" placeholder="Ej. +57 320 123 4567">
+        </div>
+        <div class="names__usuario">
+            <label for="tipo_genero" class="label-genero">Tu género principal</label>
+            <select name="tipo_genero" id="tipo_genero" class="select-genero">
+                <option value="" disabled selected>-- Elige un género --</option>
+                <option value="Reggaeton">Reggaetón</option>
+                <option value="Salsa">Salsa</option>
+                <option value="Vallenato">Vallenato</option>
+                <option value="Bachata">Bachata</option>
+                <option value="Carranga">Carranga</option>
+                <option value="Otro">Otro (Especifique en la descripción)</option>
+            </select>
+        </div>
+        <div class="names__usuario full-width">
+            <label for="description_usuario" class="label-descripcion">Háblanos de tu música</label>
+            <textarea name="description_usuario" id="description_usuario" class="textarea-descripcion"
+                placeholder="Descríbete como artista: tu estilo, influencias, lo que te inspira o el tipo de música que creas..."
+                rows="4"></textarea>
+        </div>
+        <button type="submit" class="submit-button">¡Sube al Escenario!</button>
+    </form>
+</section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Music Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

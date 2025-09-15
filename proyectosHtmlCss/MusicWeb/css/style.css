@@ -1,0 +1,44 @@
+@import url("/proyectosHtmlCss/MusicWeb/css/form.css");
+@import url("/proyectosHtmlCss/MusicWeb/css/header.css");
+@import url("/proyectosHtmlCss/MusicWeb/css/profile.css");
+@import url("/proyectosHtmlCss/MusicWeb/css/footer.css");
+@import url("/proyectosHtmlCss/MusicWeb/css/generos.css");
+
+:root {
+    /* Paleta de colores musicales */
+    --color-bg-dark: #121212;
+    --color-bg-light: #212121;
+    --color-primary-neon: #6e00ff;
+    --color-secondary-neon: #ff007a;
+    --color-tertiary-neon: #00e0ff;
+    --color-text-light: #f0f0f0;
+    --color-text-muted: #b0b0b0;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+    line-height: 1.6;
+    background: linear-gradient(135deg, var(--color-bg-dark) 0%, var(--color-bg-light) 100%);
+    min-height: 100vh;
+}
+
+body,
+div,
+ul,
+nav,
+header,
+footer,
+a,
+li,
+label {
+    margin: 0;
+    padding: 0;
+}

@@ -32,32 +32,41 @@
     background-size: contain;
     filter: drop-shadow(4px 4px 10px #000000);
     border-right: 2px dashed #4b2b1a;
+    background-color: #DC143C; 
 }
 .main > .content__personaje:nth-child(2) > .img__personaje {
     background-image: url("/proyectosHtmlCss/OnePieceWeb/img/zoro/pngwing.com.png");
+    background-color: #2E8B57;
 }
 .main > .content__personaje:nth-child(3) > .img__personaje {
     background-image: url("/proyectosHtmlCss/OnePieceWeb/img/usopp/pngwing.com.png");
+    background-color: #191970;
 }
 .main > .content__personaje:nth-child(4) > .img__personaje {
     background-image: url("/proyectosHtmlCss/OnePieceWeb/img/shopper/pngwing.com.png");
+    background-color: #FFA500; 
 }
 .main > .content__personaje:nth-child(5) > .img__personaje {
     background-image: url("/proyectosHtmlCss/OnePieceWeb/img/sanji/pngwing.com.png");
+    background-color: #FFD700;
 }
 .main > .content__personaje:nth-child(6) > .img__personaje {
     background-image: url("/proyectosHtmlCss/OnePieceWeb/img/robin/pngwing.com.png");
+    background-color: #FF69B4; 
 }
 .main > .content__personaje:nth-child(7) > .img__personaje {
     background-image: url("/proyectosHtmlCss/OnePieceWeb/img/nami/pngwing.com.png");
+     background-color: #8A2BE2;
 }
 .main > .content__personaje:nth-child(8) > .img__personaje {
     background-image: url("/proyectosHtmlCss/OnePieceWeb/img/franky/pngwing.com.png");
+    background-color: #2F4F4F;
 }
 
 .img__personaje:hover {
     transform: rotate(-2deg);
     transition: transform 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .content__informacion {
@@ -126,4 +135,25 @@
     background-size: contain;
     filter: drop-shadow(2px 4px 6px black);
     border: none;
+}
+.main > .content__personaje:nth-child(2) > .content__arma > .img__arma {
+  background-image: url("/proyectosHtmlCss/OnePieceWeb/img/zoro/pngwing.com.png");
+}
+.main > .content__personaje:nth-child(3) > .content__arma > .img__arma {
+  background-image: url("/proyectosHtmlCss/OnePieceWeb/img/usopp/pngwing.com.png");
+}
+.main > .content__personaje:nth-child(4) > .content__arma > .img__arma {
+  background-image: url("/proyectosHtmlCss/OnePieceWeb/img/shopper/pngwing.com.png");
+}
+.main > .content__personaje:nth-child(5) > .content__arma > .img__arma {
+  background-image: url("/proyectosHtmlCss/OnePieceWeb/img/sanji/pngwing.com.png");
+}
+.main > .content__personaje:nth-child(6) > .content__arma > .img__arma {
+  background-image: url("/proyectosHtmlCss/OnePieceWeb/img/robin/pngwing.com.png");
+}
+.main > .content__personaje:nth-child(7) > .content__arma > .img__arma {
+  background-image: url("/proyectosHtmlCss/OnePieceWeb/img/nami/pngwing.com.png");
+}
+.main > .content__personaje:nth-child(8) > .content__arma > .img__arma {
+  background-image: url("/proyectosHtmlCss/OnePieceWeb/img/franky/pngwing.com.png");
 }
