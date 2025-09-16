@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.transform-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.transform-card {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    background-color: #2c2c2c;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.transform-card img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.card-title {
+    position: absolute;
+    top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Ejemplos de cada función transform con hover
+    ---------------------------------------------
+    Cada card tiene una clase única para aplicar una transformación específica.
+    La transición se aplica tanto a la tarjeta como a la imagen.
+*/
+
+/* 1. transform: translate() - Mueve el elemento */
+/* La función translate() mueve un elemento de su posición actual. */
+/* Recibe uno o dos valores:
+   - translate(x, y): mueve en el eje X y en el eje Y.
+   - translate(x): solo mueve en el eje X.
+*/
+.translate:hover img {
+    transform: translate(20px, -20px);
+}
+
+/* 2. transform: scale() - Escala (redimensiona) el elemento */
+/* La función scale() cambia el tamaño de un elemento. */
+/* Recibe uno o dos valores:
+   - scale(x, y): escala en el eje X y en el eje Y.
+   - scale(valor): escala uniformemente en ambos ejes.
+*/
+.scale:hover img {
+    transform: scale(1.2); /* Aumenta el tamaño en un 20% */
+}
+
+/* 3. transform: rotate() - Rota el elemento */
+/* La función rotate() gira un elemento alrededor de un punto central. */
+/* Se expresa en grados (deg), giros (turn) o radianes (rad). */
+.rotate:hover img {
+    transform: rotate(30deg); /* Rota 30 grados en el sentido de las agujas del reloj */
+}
+
+/* 4. transform: skew() - Inclina (deforma) el elemento */
+/* La función skew() inclina un elemento en un ángulo. */
+/* Recibe uno o dos valores:
+   - skew(x, y): inclina en el eje X y en el eje Y.
+   - skew(x): solo inclina en el eje X.
+*/
+.skew:hover img {
+    transform: skew(-15deg); /* Inclina la imagen 15 grados en el eje X */
+}

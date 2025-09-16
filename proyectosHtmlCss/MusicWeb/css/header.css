@@ -113,6 +113,14 @@
 
 /* Header media queries */
 @media screen and (min-width: 600px) {
+    .header{
+        padding: 20px 0;
+        animation: movement-nav both;
+        animation-timeline: scroll();
+        position: sticky;
+        top: 0;
+        animation-range: 20px 100px;
+    }
     .header__open-nav-button {
         display: none;
     }
@@ -133,5 +141,16 @@
     }
     .header__nav-item a {
         font-size: 1rem;
+    }
+}
+/*animaciones*/
+@keyframes header-movement{
+    from{
+        padding: 20px 0;
+        background-color: rgba(33, 33, 33, 0.7);
+    }
+    to{
+        padding: 20px 0;
+        background-color: rgba(90, 89, 89, 0.7);
     }
 }

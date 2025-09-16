@@ -1,0 +1,83 @@
+/* Paso 1: Variables Globales (:root)
+    -----------------------------------
+    El selector :root se refiere al elemento raíz del documento (el <html>).
+    Las variables que declares aquí estarán disponibles en todo el documento.
+    Es el mejor lugar para definir colores, fuentes y espaciados generales.
+*/
+:root {
+    /* Paleta de colores */
+    --color-principal: #48e;
+    --color-texto: #fff;
+    --color-fondo: #1a1a1a;
+    
+    /* Espaciado */
+    --padding-box: 0 40px;
+    --margin-box: 120px auto;
+    
+    /* Fuente */
+    --font-family-principal: sans-serif;
+}
+
+/* Paso 2: @property (para variables dinámicas)
+    -------------------------------------------
+    La regla @property te permite registrar una variable CSS para que el navegador
+    sepa qué tipo de dato contiene (color, número, etc.).
+    Esto es fundamental para poder ANIMAR la variable.
+*/
+@property --border-width {
+    syntax: '<length>'; /* Tipo de dato: longitud (ej. 5px, 1rem) */
+    inherits: false;    /* No hereda el valor del padre */
+    initial-value: 0px; /* Valor inicial antes de la animación */
+}
+
+/* Estilos principales usando las variables globales
+*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-principal);
+    background-color: var(--color-fondo);
+}
+
+.box {
+    background-color: var(--color-principal);
+    display: grid;
+    place-content: center;
+    color: var(--color-texto);
+    margin: var(--margin-box);
+    padding: var(--padding-box);
+    font-size: clamp(2.4rem, 2.2vw, 4rem);
+    
+    /* Aplicamos la variable que animaremos */
+    border: var(--border-width) solid orange;
+    
+    /* Y agregamos la transición para que la animación sea suave */
+    transition: --border-width 0.5s ease-in-out;
+}
+
+/* Paso 3: Variables Locales y uso con hover
+    ------------------------------------------
+    Las variables locales se definen dentro de un selector y solo están
+    disponibles para ese selector y sus hijos.
+*/
+.box h1 {
+    /* Aquí definimos una variable local --heading-color */
+    --heading-color: yellow;
+    color: var(--heading-color);
+    transition: color 0.3s ease;
+}
+
+/* Activamos las animaciones con hover
+*/
+.box:hover {
+    /* Animamos la variable --border-width, que registramos con @property */
+    --border-width: 10px;
+    
+    /* Podemos cambiar otras variables para efectos más complejos */
+    --color-principal: #e74c3c; /* Cambia el color de fondo al rojo */
+}
+
+.box h1:hover {
+    /* Cambiamos el color del h1 con su variable local */
+    --heading-color: var(--color-principal); /* Le asignamos el color principal de la caja */
+}

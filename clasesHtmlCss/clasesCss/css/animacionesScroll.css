@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    height: 200vh;
+}
+.box{
+    width: 90%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #48e;
+    border-radius: 39px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-timeline: --containerScroll;
+}
+.barra{
+    margin: 20px;
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 6%;
+    box-sizing: border-box;
+    animation-name: llenar_barra;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    /*hace que la animacion funcione con el scroll*/
+    animation-timeline: --containerScroll;
+}
+
+.crecedor{
+    height: 200vh;
+}
+/*pausamos la barra*/
+.barra:active{
+    /*cooremos la animacion*/
+    animation-play-state: running;
+    animation-play-state: paused;
+}
+/*creamos la animacion*/
+@keyframes llenar_barra{
+    from{
+        width: 0%;
+        background-color: rgb(92, 5, 255);
+    }
+    to{
+        width: 95%;
+        background-color: red;
+    }
+}

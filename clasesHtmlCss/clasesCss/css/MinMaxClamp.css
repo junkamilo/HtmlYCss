@@ -1,0 +1,65 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    padding: 2rem;
+    font-family: sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #48e;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* 1. min() - Elige el valor más pequeño */
+/* Es útil para que un elemento no se vuelva demasiado grande en pantallas amplias. */
+/* Su ancho será el 80% de la ventana, pero nunca superará los 500px. */
+.card-min {
+    width: min(500px, 80%);
+}
+
+/* 2. max() - Elige el valor más grande */
+/* Es útil para que un elemento no se vuelva demasiado pequeño en pantallas estrechas. */
+/* Su ancho será el 60% de la ventana, pero nunca será menor de 400px. */
+.card-max {
+    width: max(400px, 60%);
+}
+
+/* 3. clamp() - Mantiene un valor entre un mínimo y un máximo */
+/* ¡Esta es la más poderosa! Es como una combinación de min() y max(). */
+/* - Valor mínimo: 300px (nunca será más estrecho que esto). */
+/* - Valor preferido: 50% (intentará ser la mitad de la pantalla). */
+/* - Valor máximo: 800px (nunca será más ancho que esto). */
+.card-clamp {
+    width: clamp(300px, 50%, 800px);
+}

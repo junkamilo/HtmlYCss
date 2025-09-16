@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de calc()</title>
+    <link rel="stylesheet" href="/clasesHtmlCss/clasesCss/css/calc.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Función <code>calc()</code> en CSS</h1>
+        <p>Ajusta el tamaño de tu navegador para ver cómo el ancho de los elementos cambia dinámicamente.</p>
+    </div>
+
+    <div class="full-width-container">
+        <div class="info-block">Este contenedor representa el ancho total.</div>
+    </div>
+
+    <div class="calc-container">
+        <div class="info-block"><code>calc(100% - 120px)</code></div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p><code>calc(50% - var(--gap) / 2)</code></p>
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <p><code>calc(50% - var(--gap) / 2)</code></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de min(), max() y clamp()</title>
+    <link rel="stylesheet" href="/clasesHtmlCss/clasesCss/css/MinMaxClamp.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Funciones de Tamaño Adaptable</h1>
+        <p>Ajusta el tamaño de la ventana del navegador para ver cómo cambia el ancho del contenedor.</p>
+    </div>
+
+    <div class="container">
+        <div class="card card-min">
+            <h2>min()</h2>
+            <p>El ancho de este contenedor es <code>min(500px, 80%)</code>. Siempre será el valor más pequeño de los dos. Si el 80% del viewport es menor que 500px, usará 80%.</p>
+        </div>
+
+        <div class="card card-max">
+            <h2>max()</h2>
+            <p>El ancho de este contenedor es <code>max(400px, 60%)</code>. Siempre será el valor más grande de los dos. Si el 60% del viewport es mayor que 400px, usará 60%.</p>
+        </div>
+
+        <div class="card card-clamp">
+            <h2>clamp()</h2>
+            <p>El ancho de este contenedor es <code>clamp(300px, 50%, 800px)</code>. Se ajusta entre un valor mínimo (300px) y uno máximo (800px), usando un valor preferido (50%) en el medio.</p>
+        </div>
+    </div>
+</body>
+</html>

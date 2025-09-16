@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif; /* Usar una fuente con serifa mejora el efecto */
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-box {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+
+/* ------------------------------------- */
+/* Estilo para la primera letra del párrafo */
+/* ------------------------------------- */
+.content-box p::first-letter {
+    /* `initial-letter` toma dos valores separados por un espacio.
+       El primer valor es el tamaño de la letra.
+       El segundo valor (opcional) es la cantidad de líneas que "caerá". */
+    
+    /* Ejemplo 1: Letra grande que ocupa 3 líneas */
+    initial-letter: 3;
+    
+    /* Ejemplo 2: Letra grande que ocupa 3 líneas y "cae" 2 líneas */
+    /* initial-letter: 3 2; */
+
+    /* Agregamos estilos para hacerla más visible y elegante */
+    font-size: 4em; /* Se vuelve 4 veces más grande que la fuente normal */
+    font-weight: bold;
+    color: #48e;
+    
+    /* Le damos un poco de espacio para que no se pegue al texto */
+    padding-right: 0.25em;
+    padding-left: 0.1em;
+    margin-right: 0.15em;
+    
+    /* Alineación de la letra dentro de la caja de la primera línea */
+    line-height: 1;
+    
+    /* Flota la letra para que el texto la envuelva */
+    float: left;
+}

@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1117;
+    color: #fff;
+}
+
+.box {
+    /* Usamos `dvh` para la altura.
+       Esto asegura que la caja ocupe el 100% de la altura de la ventana,
+       adaptándose a la barra de dirección en dispositivos móviles. */
+    height: 100dvh;
+    
+    /* El ancho dinamica de la pantalla. */
+    width: 100dvw;
+    
+    /* Centramos el contenido de la caja. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Le damos un diseño elegante con un degradado. */
+    background: linear-gradient(135deg, #1f2730, #2b3543);
+    
+    /* Efecto de borde sutil */
+    border: 3px solid #6699ff;
+    
+    /* Sombra para darle profundidad */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    
+    /* Añadimos un padding para que el contenido no se pegue a los bordes. */
+    padding: 2rem;
+    
+    /* Alineación de texto y tamaño */
+    text-align: center;
+}
+
+.box h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 0.5rem;
+}
+
+.box p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-top: 0;
+}

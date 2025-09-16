@@ -1,0 +1,75 @@
+/* Variables globales para la paleta de colores y el espaciado */
+:root {
+    --color-principal: #3498db;
+    --color-secundario: #2c3e50;
+    --color-texto: #fff;
+    --gap: 30px; /* Esta variable es clave para el ejemplo de suma */
+}
+
+/* Estilos básicos */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Ejemplo 1: Resta (calc(100% - 120px)) */
+/* - El `.full-width-container` se expande a todo el ancho.
+   - El `.calc-container` usa `calc()` para ocupar el 100% del ancho del body,
+     pero restándole un margen de 60px a cada lado (120px en total).
+*/
+.full-width-container {
+    width: 100%;
+    height: 40px;
+    background-color: #e74c3c;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc-container {
+    /* Aquí está la función `calc()` en acción. */
+    /* Le decimos que tome el 100% del ancho disponible y le reste 120px. */
+    /* Esto es perfecto para dejar un margen fijo en los bordes. */
+    width: calc(100% - 120px);
+    background-color: var(--color-principal);
+    height: 40px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ejemplo 2: Suma y División (calc(50% - var(--gap) / 2)) */
+/*
+   - Usamos un flexbox para que las tarjetas se coloquen una al lado de la otra.
+   - El `gap` crea el espacio entre las tarjetas, pero el ancho de cada tarjeta
+     debe compensar ese espacio para que quepan en la fila.
+*/
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--gap); /* Definimos el espacio entre las tarjetas con una variable */
+    padding: 20px;
+}
+
+.card {
+    /* Aquí usamos `calc()` con una variable y una operación de división. */
+    /* Ancho de cada tarjeta: 50% del contenedor - la mitad del espacio entre ellas. */
+    /* Esto asegura que las dos tarjetas ocupen exactamente el 100% del ancho,
+       incluyendo el espacio del `gap`. */
+    width: calc(50% - var(--gap) / 2);
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
