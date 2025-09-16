@@ -1,0 +1,102 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se desborde */
+}
+
+.box img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: clip-path 0.5s ease-out; /* Hacemos que la animación de clip-path sea suave */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* ------------------------------------- */
+/* 1. `clip-path: circle()` */
+/* Recorta una imagen en forma de círculo.
+   - circle(radio at posición X posición Y) */
+.circle-clip img {
+    clip-path: circle(50% at 50% 50%);
+}
+
+/* Efecto hover: el círculo se hace más pequeño */
+.circle-clip:hover img {
+    clip-path: circle(30% at 50% 50%);
+}
+
+/* ------------------------------------- */
+/* 2. `clip-path: ellipse()` */
+/* Recorta una imagen en forma de elipse (óvalo).
+   - ellipse(radio X radio Y at posición X posición Y) */
+.ellipse-clip img {
+    clip-path: ellipse(50% 30% at 50% 50%);
+}
+
+/* Efecto hover: la elipse se deforma */
+.ellipse-clip:hover img {
+    clip-path: ellipse(30% 50% at 50% 50%);
+}
+
+/* ------------------------------------- */
+/* 3. `clip-path: polygon()` */
+/* Recorta una imagen con una forma personalizada definida por puntos.
+   - polygon(punto1, punto2, punto3, ...) */
+.polygon-clip img {
+    /* Crea un triángulo apuntando hacia abajo */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Efecto hover: el triángulo se invierte */
+.polygon-clip:hover img {
+    clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
+
+/* ------------------------------------- */
+/* 4. Animación de `clip-path` */
+/* Animamos la forma de un polígono al pasar el cursor */
+.animated-clip img {
+    /* Forma inicial: un cuadrado */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.animated-clip:hover img {
+    /* Forma final: una estrella de 5 puntas */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}

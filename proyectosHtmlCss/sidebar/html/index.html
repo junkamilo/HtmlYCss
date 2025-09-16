@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/proyectosHtmlCss/sidebar/css/style.css">
+    <title>sideBarMusic</title>
+</head>
+<body>
+    <div class="app-container">
+        <input type="checkbox" id="aside-toggle" class="aside-toggle-checkbox">
+
+        <aside class="aside">
+            <div class="aside__header">
+                <a href="#" class="logo-container">
+                    <span class="material-symbols-outlined logo-icon">music_note</span>
+                    <span class="logo-text">Melody</span>
+                </a>
+                <label for="aside-toggle" class="menu-toggle">
+                    <span class="material-symbols-outlined">menu</span>
+                </label>
+            </div>
+            
+            <nav class="aside__main">
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link active"><span class="material-symbols-outlined">home</span>Inicio</a></li>
+                    <li><a href="#" class="nav-link"><span class="material-symbols-outlined">explore</span>Explorar</a></li>
+                    <li><a href="#" class="nav-link"><span class="material-symbols-outlined">search</span>Buscar</a></li>
+                    <li><a href="#" class="nav-link"><span class="material-symbols-outlined">playlist_play</span>Mis listas</a></li>
+                </ul>
+            </nav>
+            
+            <div class="aside__footer">
+                <div class="user-profile">
+                    <img src="https://i.pravatar.cc/150?u=a042581f1e29026704d" alt="Foto de perfil del usuario" class="profile-pic">
+                    <p class="user-name">Usuario Pro</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content"></main>
+    </div>
+</body>
+</html>

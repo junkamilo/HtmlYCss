@@ -1,0 +1,190 @@
+/* Paleta de colores más innovadora */
+:root {
+    --color-fondo-principal: #0c0a09;
+    --color-fondo-aside: #151A2C;
+    --color-acento-rosa: #FF0099; /* Rosa neón brillante */
+    --color-acento-azul: #00FFFF; /* Azul cian neón */
+    --color-texto-claro: #F5F5F5;
+    --color-texto-oscuro: #8B90A5;
+    --sombra-neon: 0 0 10px var(--color-acento-azul), 0 0 20px var(--color-acento-rosa);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-claro);
+    overflow: hidden; /* Evita el scroll horizontal al ocultar el aside */
+}
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.aside {
+    width: 20rem;
+    background-color: var(--color-fondo-aside);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+    padding: 2rem 1.5rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* La clave de la animación */
+    transform: translateX(0); 
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Efecto de rebote */
+}
+
+/* Oculta el checkbox */
+.aside-toggle-checkbox {
+    display: none;
+}
+
+/* Estado del aside cuando el checkbox está activado */
+/* Se mueve hacia la izquierda para ocultarse */
+.aside-toggle-checkbox:checked + .aside {
+    transform: translateX(-100%);
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+    transition: margin-left 0.5s ease;
+}
+
+/* Mueve el main-content cuando el aside está oculto */
+.aside-toggle-checkbox:checked ~ .main-content {
+    margin-left: 5rem;
+}
+
+/* Encabezado del aside */
+.aside__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-acento-secundario);
+    padding-bottom: 1.5rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--color-texto-claro);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: text-shadow 0.3s ease;
+}
+
+.logo-container:hover {
+    text-shadow: var(--sombra-neon);
+}
+
+.logo-icon {
+    font-size: 2rem;
+    color: var(--color-acento-rosa);
+    animation: pulse-neon 2s infinite; /* Nuevo efecto de pulso neón */
+}
+
+@keyframes pulse-neon {
+    0% { transform: scale(1); text-shadow: 0 0 5px var(--color-acento-rosa); }
+    50% { transform: scale(1.1); text-shadow: 0 0 15px var(--color-acento-rosa); }
+    100% { transform: scale(1); text-shadow: 0 0 5px var(--color-acento-rosa); }
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: var(--color-texto-claro); /* Aseguramos que el color del icono sea el predeterminado */
+}
+
+/* Animación del icono del menú al hacer clic */
+.aside-toggle-checkbox:checked + .aside .menu-toggle {
+    transform: rotate(180deg);
+}
+
+/* Navegación principal */
+.aside__main {
+    padding: 2rem 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-texto-oscuro);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+    border-radius: var(--borde-radio-suave);
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: linear-gradient(90deg, var(--color-acento-secundario), rgba(75, 0, 130, 0.2));
+    color: var(--color-acento-rosa);
+    box-shadow: 0 0 10px rgba(255, 0, 153, 0.5); /* Sombra neón en el hover */
+    transform: translateX(10px);
+}
+
+.nav-link .material-symbols-outlined {
+    font-size: 1.5rem;
+}
+
+/* Pie de página del aside */
+.aside__footer {
+    border-top: 2px solid var(--color-acento-secundario);
+    padding-top: 1.5rem;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.user-profile:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.profile-pic {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-acento-rosa);
+    box-shadow: 0 0 8px var(--color-acento-azul);
+    transition: transform 0.3s ease;
+}
+
+.user-profile:hover .profile-pic {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--color-acento-rosa);
+}
+
+.user-name {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+}
